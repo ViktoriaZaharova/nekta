@@ -277,8 +277,26 @@ nav.navbar .dropdown:hover
     img
       opacity: .7
 
+.dropdown-menu__logos
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
 
-  
+.logo-item
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  width: 240px
+  white-space: normal
+  padding: 10px 15px
+  .img-logo
+    min-height: 49px
+    max-width: 150px
+    width: 100%
+    margin: 0 0 10px
+
 //header
 header
   border-bottom: 1px solid $accent
@@ -555,8 +573,8 @@ main
     transform: translate(0,-50%)
     width: 50%
     height: 100%
-    background: url("../img/bg1.jpg") no-repeat center
-      size: cover
+    background: url("../img/bg1.jpg") no-repeat 80% center
+      size: 1562px
 
 .callback-content
   padding: 100px 0 80px
@@ -672,6 +690,8 @@ main
   flex-direction: column
   align-items: center
   margin: 10px auto
+  .links-details
+    color: #4397A5
 
 .news-box__content
   padding: 15px 20px
