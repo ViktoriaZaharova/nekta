@@ -334,6 +334,41 @@ nav.navbar .dropdown:hover > .dropdown-menu {
     .dropdown-item:hover img {
       opacity: .7; }
 
+.dropdown-menu__logos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 240px;
+  white-space: normal;
+  padding: 10px 15px; }
+  .logo-item .img-logo {
+    min-height: 49px;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 0 10px; }
+
 header {
   border-bottom: 1px solid #4397A5; }
 
@@ -659,8 +694,8 @@ main {
             transform: translate(0, -50%);
     width: 50%;
     height: 100%;
-    background: url("../img/bg1.jpg") no-repeat center;
-      background-size: cover; }
+    background: url("../img/bg1.jpg") no-repeat 80% center;
+      background-size: 1562px; }
 
 .callback-content {
   padding: 100px 0 80px;
@@ -806,6 +841,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px auto; }
+  .news-box .links-details {
+    color: #4397A5; }
 
 .news-box__content {
   padding: 15px 20px;
@@ -1240,7 +1277,6 @@ input, .form-control {
   main {
     background-position: -277px center; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
   main {
     padding: 70px 0;
@@ -1308,7 +1344,14 @@ input, .form-control {
   .product-box__it:hover .product-box {
     height: 100%;
     padding: 35px;
-    width: 100%; } }
+    width: 100%; }
+  .dropdown-menu__logos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .logo-item {
+    width: 100%; }
+    .logo-item .img-logo {
+      min-height: auto; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {
