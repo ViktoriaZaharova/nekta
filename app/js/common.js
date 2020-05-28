@@ -23,3 +23,14 @@ $('.news-slider').slick({
         }
     ]
 });
+
+$('.links-load').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.filter-box').find('ul li:hidden').slice(0, 5).slideDown();
+    // $('.equipment-product:hidden').slice(0, 12).slideDown();
+
+    var onBlock = $(this).parents('.filter-box').find('ul li:hidden').length;
+    if(onBlock <= 0) {
+        $(this).hide();
+    }
+});

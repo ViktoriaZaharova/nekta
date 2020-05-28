@@ -3,6 +3,31 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1720px)
+  .card-line .td-manufacturer
+    width: 165px
+
+  .card-line .td-type
+    padding: 12px
+    width: 250px
+
+  .card-line .td-protocol
+    padding: 12px
+    width: 150px
+
+@media only screen and (max-width : 1440px)
+  .card-line
+    font-size: 14px
+
+  .card-line .td-manufacturer
+    width: 130px
+
+  .card-line .td-type
+    width: 180px
+
+  .card-line .td-protocol
+    width: 105px
+
 @media only screen and (max-width : 1199px)
   .product-box__it
     margin: 0 auto 30px
@@ -34,6 +59,12 @@
       height: 100%
       -webkit-background-size: cover
       background-size: cover
+
+  .title
+    font-size: 44px
+
+  .equipment-about
+    font-size: 18px
 
 
 /* Medium Devices, Desktops */
@@ -86,6 +117,16 @@
   footer .logo
     max-width: 200px
 
+  .filter-wrapper
+    max-width: none
+    margin: 0 auto 30px
+
+  .filter-wrapper ul li
+    margin: 0 0 10px
+
+  .nav-tabs__card
+    flex-wrap: nowrap
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .header-main
@@ -97,6 +138,7 @@
     padding: 0 20px
     .btn-call
       margin: 0 20px 0 auto
+      width: 220px
 
   .logo-mobile
     max-width: 150px
@@ -164,6 +206,29 @@
 
   main
     background-position: -277px center
+
+  .phone
+    font-size: 18px
+    margin: 0 auto
+
+  .header-top
+    padding: 0
+
+  .card-line .td-number
+    padding: 12px 10px
+    width: 50px
+
+  .modal-title
+    font-size: 30px
+
+  .form-group__title
+    font-size: 18px
+    margin: 0 0 10px
+
+@media only screen and (max-width : 600px)
+  .card-block
+    width: 250px
+    height: 250px
 
 @media only screen and (max-width : 575px)
   main
@@ -244,8 +309,68 @@
     .img-logo
       min-height: auto
 
+  .header-main
+    .header-top
+      flex-wrap: wrap
+      .btn-call
+        margin: 10px auto 0
+        order: 1
+        width: 100%
+
+  .title
+    font-size: 34px
+    margin: 0 auto 10px
+
+  .equipment-about
+    font-size: 16px
+    p
+      margin: 0 0 20px
+
+  .card-line .td-manufacturer
+    padding: 12px
+    width: 150px
+
+  .card-line
+    .td-name
+      min-width: 200px
+
+  .card-line .td-type
+    min-width: 180px
+
+  .card-line
+    margin: 0
+
+  .nav-tabs__card .nav-item:nth-child(2) .nav-link
+    width: 60px
+    min-width: 60px
+
+  .tab-content__card
+    .tab-wrapper
+      justify-content: space-around
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+  .form-search label input
+    font-size: 16px
+
+  .equipment-products__wrapper .line-wrapper
+    flex-wrap: wrap
+
+  .nav-tabs__card
+    margin: 10px auto 0
+    width: 100%
+    justify-content: center
+
+  .modal-header
+    padding: 26px 24px 5px
+
+@media only screen and (max-width : 420px)
+  .modal-footer
+    padding: 20px 23px
+    button
+      margin: 0 auto 10px
+      width: 100%
+
 @media only screen and (max-width : 370px)
   .logo-mobile
     max-width: 120px
@@ -284,3 +409,21 @@
     justify-content: center
     align-items: center
     margin: 20px auto 0
+
+  .phone
+    font-size: 16px
+    .icon
+      width: 14px
+      height: 14px
+
+  .nav-tabs__card .nav-item
+    width: auto
+
+  .tab-content__card
+    padding: 0
+
+  .title
+    font-size: 30px
+
+  .modal-title
+    font-size: 24px
