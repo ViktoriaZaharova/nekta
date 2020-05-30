@@ -72,6 +72,58 @@
   .equipment .container-fluid
     padding: 0 15px
 
+  .for-whom:before
+    width: 300px
+    height: 700px
+    -webkit-background-size: 100%
+    background-size: 100%
+
+  .function-box
+    font-size: 14px
+    &__title
+      font-size: 18px
+
+  .function-box-max h3
+    font-size: 20px
+
+  .work-principles__center-wrap .item-right .box p, .work-principles__center-wrap ul, .work-principles__center-wrap .item-right__bottom
+    font-size: 18px
+
+  .work-principles__center-wrap .item-right
+    width: 300px
+
+  .work-principles__center-wrap .item-right__bottom
+    height: 65px
+
+  .work-principles__center
+    width: 520px
+
+  .work-principles__left
+    width: 165px
+
+  .work-principles__right
+    width: 140px
+
+  .work-principles__box
+    width: 100%
+    height: 125px
+
+  .work-principles__center-wrap .item-right .box
+    width: 48%
+    margin: 0 0 20px
+
+  .work-principles__icon
+    margin: 0 0 25px
+
+  .work-principles__center h3
+    margin: 0 0 40px
+
+  .work-principles
+    -webkit-background-size: 700px
+    background-size: 700px
+
+  .nekta-callback .callback-content
+    padding: 40px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -133,7 +185,55 @@
   .nav-tabs__card
     flex-wrap: nowrap
 
+  .main-core
+    -webkit-background-size: cover
+    background-size: cover
+    padding: 100px 0
 
+  .for-whom
+    font-size: 18px
+
+  .work-principles__left
+    width: 100%
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+
+  .work-principles__icon
+    margin: 0
+
+  .work-principles__center
+    width: 100%
+    padding: 20px
+    margin: 50px 0
+    &:before
+      transform: translate(-50%,0) rotate(90deg)
+      left: 50%
+      top: -30px
+
+  .work-principles__right
+    width: 100%
+    flex-direction: row
+    align-items: stretch
+    justify-content: space-between
+
+  .work-principles__box
+    width: 30%
+    margin: 0
+    &:before
+      transform: translate(-50%,0) rotate(90deg)
+      left: 50%
+      top: -30px
+
+  .nekta-callback
+    margin: 70px 0
+
+  .nekta-callback .form .form-group
+    max-width: 48%
+
+  .nekta-callback .callback-content h2
+    margin: 0 0 30px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -232,6 +332,44 @@
   .form-group__title
     font-size: 18px
     margin: 0 0 10px
+
+  .nekta-about
+    padding: 30px 0
+    .text
+      max-width: none
+      font-size: 16px
+      margin: 0 0 30px
+    .btn
+      margin: 0 auto 30px
+
+  .for-whom
+    font-size: 16px
+    h2
+      margin: 0 0 30px
+
+  .function-box
+    min-height: auto
+    &__body
+      height: auto
+    .btn
+      margin: 30px 0 0
+
+  .function-box-max
+    padding: 50px 20px
+
+  .nekta-function
+    padding: 60px 0
+
+  .work-principles h2
+    margin: 0 0 40px
+
+  .work-principles__icon
+    width: 40px
+    height: 40px
+
+  .work-principles__center h3
+    font-size: 24px
+    margin: 0 0 30px
 
 @media only screen and (max-width : 600px)
   .card-block
@@ -356,6 +494,59 @@
     .tab-wrapper
       justify-content: space-around
 
+  .main-core
+    background: #fff
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: url("../img/bg1-1.jpg") no-repeat center
+        size: cover
+      opacity: .7
+    h1
+      text-align: center
+      justify-content: center
+    .btn
+      margin: 20px auto 0
+
+  .work-principles__center-wrap
+    flex-wrap: wrap
+    ul
+      width: 100%
+      flex-direction: row
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: space-around
+      li
+        &:last-child
+          margin: 0 0 11px
+    .item-right
+      width: 100%
+      margin: 50px 0 0
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: -30px
+        transform: translate(-50%,0) rotate(90deg)
+        width: 33px
+        height: 16px
+        left: 50%
+        background: url("../img/arrow-double.svg") no-repeat center
+          size: contain
+    .item-right__top
+      &:before
+        display: none
+
+  .nekta-callback .form .form-group
+    max-width: none
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)
   .form-search label input
@@ -372,12 +563,37 @@
   .modal-header
     padding: 26px 24px 5px
 
+  .header
+    .header-main .btn-call
+      width: 140px
+
+    .logo-mobile
+      width: 100px
+
+  .main-core
+    padding: 80px 0
+
 @media only screen and (max-width : 420px)
   .modal-footer
     padding: 20px 23px
     button
       margin: 0 auto 10px
       width: 100%
+
+  .work-principles__center-wrap .item-right .box
+    width: 100%
+    text-align: center
+    &:nth-child(3)
+      margin: 0 0 20px
+
+  .work-principles__box
+    width: 100%
+    margin: 0 0 60px
+
+  .work-principles__right
+    flex-direction: column
+    align-items: center
+
 
 @media only screen and (max-width : 370px)
   .logo-mobile
@@ -435,3 +651,6 @@
 
   .modal-title
     font-size: 24px
+
+  .nekta-callback .callback-content
+    padding: 30px 20px

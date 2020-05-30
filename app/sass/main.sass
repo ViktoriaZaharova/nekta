@@ -169,6 +169,35 @@ h2
     color: #fff
     background: $btn
 
+.btn-red
+  background: #CC6666
+  border-radius: 5px
+  color: #fff
+  width: 232px
+  height: 54px
+  &:hover
+    background: #393F50
+    color: #fff
+
+.btn-border-accent
+  border: 2px solid $btn2
+    radius: 5px
+  height: 54px
+  max-width: 324px
+  color: $btn2
+  &:hover
+    color: $btn2
+    border-color: $btn2
+
+.btn-grey
+  background: #313849
+  color: #fff
+  width: 100%
+  height: 54px
+  border-radius: 5px
+  &:hover
+    background: $title
+    color: #fff
 
 .btn-group
   border: none
@@ -185,6 +214,7 @@ h2
     border-radius: 0 5px 5px 0
     &:hover
       border-color: #4397A5
+
 
 //menu
 .navbar-toggler
@@ -254,12 +284,20 @@ nav.navbar .dropdown:hover
   display: flex
   align-items: center
   justify-content: center
+  flex-wrap: wrap
   border:
     right: 1px solid $accent
     top: 1px solid $accent
   &:last-child
     border: none
       top: 1px solid $accent
+    .nav-link
+      padding: 0
+      height: auto
+      margin: 15px 0 0
+    .links-details
+      color: #4397A5
+      margin: 0 0 15px
 
 .dropdown-toggle::after
   width: 7px
@@ -1282,6 +1320,352 @@ textarea
   color: #FF0000
   letter-spacing: 0.0357143em
 
+//nekta core
+.header
+  .nav-item-logo
+    flex: 2
+    + .nav-item
+      flex: 1.2
+    + .nav-item + .nav-item
+      flex: 1.4
+
+
+.main-core
+  padding: 114px 0 141px
+  background: url("../img/bg1-1.jpg") no-repeat right center #fff
+    size: 100%
+  color: #393F50
+  h1
+    color: #393F50
+    display: flex
+    align-items: center
+    .icon
+      padding: 10px
+      width: 55px
+      height: 55px
+      background: #313849
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 30px 0 0
+      border-radius: 5px
+
+.nekta-about
+  padding: 75px 0 77px
+  h2
+    color: $btn2
+    text-align: left
+  .description
+    margin: 19px 0 46px
+    color: #1B1A1F
+  .text
+    font-size: 18px
+    max-width: 500px
+    margin: 0 0 75px
+  .btn
+    width: 298px
+
+.for-whom
+  background: url("../img/bg2-1.png") no-repeat center top
+    size: cover
+  position: relative
+  padding: 94px 0 47px
+  color: #fff
+  font-size: 24px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 180px
+    width: 457px
+    height: 836px
+    background: url("../img/decor-bg1.png") no-repeat left center
+      size: cover
+  h2
+    text-align: left
+    color: #fff
+    margin: 0 0 68px
+  .text
+    p
+      position: relative
+      margin: 0 0 50px
+      padding: 22px 0 0
+      &:before
+        content: ''
+        top: 0
+        height: 1px
+        background: #fff
+        width: 2000px
+        right: 150px
+        position: absolute
+      &:last-child
+        margin: 0
+
+.nekta-function
+  padding: 86px 0 65px
+  h2
+    text-align: left
+    margin: 0 0 50px
+
+.function-box
+  margin: 0 0 45px
+  box-shadow: 0 2px 15px rgba(29, 29, 27, 0.15)
+  border-radius: 10px
+  overflow: hidden
+  background: #fff
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  min-height: 393px
+  color: #1B1A1F
+  &__image
+    height: 165px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    height: 228px
+    padding: 22px 35px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__title
+    font-size: 21px
+    color: #393F50
+    margin: 0 0 12px
+  .btn
+    margin: auto 0 0
+    width: 100%
+
+
+.function-box-max
+  background: #CC6666
+    size: 100%
+  padding: 128px 43px 70px
+  color: #fff
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 190px
+    top: 50%
+    transform: translate(0,-50%)
+    background: url("../img/decor-bg2.png") no-repeat right bottom
+      size: contain
+    width: 832px
+    height: 642px
+  >*
+    position: relative
+    z-index: 1
+
+  h3
+    font-size: 30px
+
+.work-principles
+  position: relative
+  background: url("../img/decor-bg3.png") no-repeat left 125px
+    size: 938px
+  color: #393F50
+  h2
+    text-align: left
+    margin: 0 0 68px
+
+.work-principles__wrapper
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  width: 100%
+  justify-content: space-between
+
+.work-principles__left, .work-principles__center, .work-principles__box
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0 2px 15px rgba(29, 29, 27, 0.15)
+
+.work-principles__icon
+  width: 80px
+  height: 80px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 44px
+  img
+    max-height: 100%
+  &:last-child
+    margin: 0
+
+.work-principles__left
+  width: 185px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  padding: 40px
+
+.work-principles__center
+  width: 600px
+  padding: 45px 29px 52px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    width: 33px
+    height: 16px
+    left: -45px
+    background: url("../img/arrow-double.svg") no-repeat center
+      size: contain
+  h3
+    font-size: 34px
+    color: #393F50
+    display: flex
+    align-items: center
+    margin: 0 0 74px
+    .icon
+      width: 55px
+      height: 55px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 5px
+      padding: 10px
+      background: #313849
+      margin: 0 30px 0 0
+
+.work-principles__box
+  width: 216px
+  height: 146px
+  text-align: center
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0 0 34px
+  padding: 0 20px
+
+  &:last-child
+    margin: 0
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    width: 33px
+    height: 16px
+    left: -45px
+    background: url("../img/arrow-double.svg") no-repeat center
+      size: contain
+
+.work-principles__right
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 216px
+
+.work-principles__center-wrap
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  width: 100%
+  ul
+    font-size: 21px
+    li
+      border-bottom: 1px solid #1D1D1B
+      padding: 0 10px 2px 0
+      margin: 0 0 11px
+      &:last-child
+        margin: 0
+
+  .item-right
+    width: 352px
+    &__top
+      border: 1px solid #9CB9C3
+        radius: 10px
+      padding: 30px 24px
+      width: 100%
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 54%
+        transform: translate(0,-50%)
+        width: 33px
+        height: 16px
+        left: -45px
+        background: url("../img/arrow-double.svg") no-repeat center
+          size: contain
+    .box
+      width: 45%
+      margin: 0 0 51px
+      &:last-child, &:nth-child(3)
+        margin: 0
+      p
+        font-size: 21px
+      span
+        margin: 14px 0 0
+    &__bottom
+      width: 100%
+      height: 82px
+      border: 1px solid #9CB9C3
+        radius: 10px
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      font-size: 21px
+      margin: 70px 0 0 0
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: -45px
+        transform: translate(-50%,0) rotate(90deg)
+        width: 33px
+        height: 16px
+        left: 50%
+        background: url("../img/arrow-double.svg") no-repeat center
+          size: contain
+
+.nekta-callback
+  margin: 113px 0 120px
+  .callback-content
+    max-width: none
+    background: #9CB9C3
+    border-radius: 10px
+    box-shadow: 0 2px 15px rgba(29, 29, 27, 0.15)
+    padding: 43px 180px 45px
+    h2
+      margin: 0 0 60px
+      color: #fff
+  .form
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    .form-group
+      max-width: 360px
+      margin: 0 0 20px
+      input
+        border: none
+        box-shadow: 0 2px 15px #A4B9BC
+        font-size: 15px
+        color: #606060
+        &::placeholder
+          color: #606060
+    button
+      margin: 20px auto 0
+      font-size: 18px
 
 @import "media"
 // Всегда в конце
