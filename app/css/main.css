@@ -198,8 +198,9 @@ h2 {
   max-width: 324px;
   color: #3777CC; }
   .btn-border-accent:hover {
-    color: #3777CC;
-    border-color: #3777CC; }
+    border-color: #3777CC;
+    background: #3777CC;
+    color: #fff; }
 
 .btn-grey {
   background: #313849;
@@ -208,7 +209,7 @@ h2 {
   height: 54px;
   border-radius: 5px; }
   .btn-grey:hover {
-    background: #393F50;
+    background: #3777CC;
     color: #fff; }
 
 .btn-group {
@@ -2284,7 +2285,10 @@ textarea {
   .nekta-callback .form .form-group {
     max-width: 48%; }
   .nekta-callback .callback-content h2 {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .work-principles__center-wrap {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
