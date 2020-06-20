@@ -34,3 +34,14 @@ $('.links-load').on('click', function (e) {
         $(this).hide();
     }
 });
+
+$('.datepicker').datepicker({
+    autoclose: true,
+    language: 'ru'
+});
+
+$('.still-links').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('click').siblings('.sorting-list').toggleClass('open');
+});
+
