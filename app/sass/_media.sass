@@ -31,6 +31,9 @@
   .equipment-img
     max-width: 350px
 
+  .list-share li a
+    width: 150px
+
 @media only screen and (max-width : 1199px)
   .product-box__it
     margin: 0 auto 30px
@@ -124,6 +127,42 @@
 
   .nekta-callback .callback-content
     padding: 40px
+
+  .blog
+    &:before, &:after
+      display: none
+
+  .main-blog h1
+    font-size: 30px
+
+  .box-text
+    margin: 0 0 40px
+
+  .article-subtitle
+    margin: 0 0 20px
+
+  .blog-content .article
+    font-size: 18px
+    line-height: normal
+
+  .pagination-article, .share p, .discuss-forum
+    font-size: 18px
+
+  .breadcrumbs li
+    a, span
+      font-size: 18px
+
+  .total-share
+    max-width: none
+    margin: 10px 0 0
+    width: 100%
+
+  .list-share
+    width: 100%
+    li
+      width: 25%
+      a
+        width: 100%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -237,6 +276,13 @@
 
   .work-principles__center-wrap
     justify-content: space-around
+
+  .pagination-article
+    padding: 20px 15px
+    font-size: 16px
+
+  .list-share li a
+    font-size: 12px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -400,6 +446,22 @@
 
   .blog-box__max .blog-box__img
     height: 253px
+
+  .blog-content
+    padding: 40px 0
+
+  .box-text
+    margin: 0 0 25px
+
+  .article-subtitle
+    margin: 0 0 15px
+
+  .pagination-article
+    margin: 0 0 30px
+
+  .discuss-forum
+    margin: 0 0 20px
+
 
 
 @media only screen and (max-width : 600px)
@@ -577,6 +639,17 @@
   .nekta-callback .form .form-group
     max-width: none
 
+  .main-blog h1
+    text-align: left
+    margin: 30px 0
+    font-size: 28px
+
+  .main-blog
+    padding: 200px 0 50px
+
+  .list-share li
+    width: 50%
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)
@@ -606,6 +679,14 @@
 
   .header-main .btn-call
     width: 140px
+
+  .pagination-article
+    flex-direction: column
+    align-items: center
+    padding: 10px
+
+  .pagination-title
+    margin: 10px auto
 
 @media only screen and (max-width : 420px)
   .modal-footer

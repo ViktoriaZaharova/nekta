@@ -1671,6 +1671,23 @@ textarea
 //blog page
 .blog
   padding: 70px 0 40px
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1010px
+    height: 788px
+  &:before
+    left: 0
+    bottom: 0
+    background: url("../img/bg7.svg") no-repeat center
+      size: 100%
+    transform: rotate(22.78deg)
+  &:after
+    right: 0
+    top: 0
+    background: url("../img/bg6.svg") no-repeat center
+      size: 100%
   .container
     max-width: 1650px
   .form-search
@@ -1929,6 +1946,7 @@ textarea
   display: flex
   flex-direction: column
   align-items: flex-start
+  margin: 0 0 30px
   h3
     font-size: 20px
     margin: 0 auto 14px
@@ -1970,6 +1988,154 @@ textarea
     text-transform: uppercase
     margin: auto 0 0
 
+//main-blog
+.main-blog
+  background: url("../img/blog1.jpg") no-repeat center
+    size: cover
+  position: relative
+  padding: 327px 0 40px
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(359.57deg, #000000 -26.48%, rgba(0, 0, 0, 0) 53.42%)
+    left: 0
+    top: 0
+  h1
+    font-size: 48px
+    font-family: $default-font
+    margin: 40px 0
+    font-weight: bold
+  .date
+    color: #fff
+    font-size: 24px
+  .container
+    max-width: 1650px
+
+.breadcrumbs
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    a
+      font-size: 24px
+      color: #fff
+      &:after
+        content: '>'
+        margin: 0 10px
+    span
+      font-size: 24px
+
+.blog-content
+  padding: 70px 0 60px
+  .article
+    color: #000000
+    font-size: 24px
+    line-height: 31px
+  .container
+    max-width: 1650px
+
+.recommended-article
+  h2
+    text-align: left
+    font-size: 24px
+    font-weight: 500
+    font-family: 'Roboto', sans-serif
+    letter-spacing: 0.0357143em
+    margin: 0 0 30px
+    color: #000
+  .container
+    max-width: 1650px
+
+.discuss-forum
+  width: 100%
+  margin: 0 0 40px
+  color: #4397A5
+  font-size: 24px
+  font-weight: 500
+  font-family: 'Roboto', sans-serif
+  letter-spacing: 0.0357143em
+  &:hover
+    color: #000
+
+.box-text
+  margin: 0 0 50px
+  &:last-child
+    margin: 0
+
+.article-subtitle
+  margin: 0 0 25px
+  &:last-child
+    margin: 0
+
+.pagination-article
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  color: #fff
+  padding: 29px 30px
+  font-size: 24px
+  background: #2C3240
+
+
+.article-links
+  color: #fff
+  font-weight: bold
+  &:hover
+    color: #357C96
+
+.share
+  margin: 40px 0 28px
+  p
+    font-size: 24px
+    width: 100%
+    margin: 0 0 20px
+    a
+      display: inline
+
+.share-line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.total-share
+  max-width: 65px
+  color: #000000
+  font-size: 10px
+  margin: 0 0 0 20px
+
+.list-share
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  li
+    a
+      display: flex
+      align-items: center
+      height: 42px
+      width: 180px
+      text-align: center
+      justify-content: center
+      font-size: 14px
+      color: #fff
+      .icon
+        margin: 0 5px 0 0
+
+.fb-links
+  background: #415D9C
+
+.twitter-links
+  background: #54ABEE
+
+.vk-links
+  background: #5B89B2
+
+.ok-links
+  background: #F4731C
 
 @import "media"
 // Всегда в конце

@@ -16,7 +16,8 @@
     <meta name="msapplication-navbutton-color" content="#000">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -129,77 +130,213 @@
     </div>
 </header>
 
-<section class="blog">
+<main class="main-blog">
     <div class="container">
         <div class="row">
-            <div class="col-12"><h1 class="title-page">Новости</h1></div>
 
-            <div class="col-12 col-md-8 col-lg-9">
-                <form class="form-search">
-                    <label><input type="text" placeholder="Поиск новости" required name="search"></label>
-                    <button class="btn-search" type="submit"><img src="img/search.svg" alt=""></button>
-                </form>
-            </div>
-
-            <div class="col-12 col-md-4 col-lg-3">
-                <form class="form-date">
-                    <label>
-                        <input type="text" name="datepicker" class="datepicker" placeholder="Выберите месяц">
-                    </label>
-                    <div class="icon"><img src="img/calendar.svg" alt=""></div>
-                </form>
+            <div class="col-12">
+                <ul class="breadcrumbs">
+                    <li><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">НОВОСТИ</a></li>
+                    <li><span>НОВОСТЬ</span></li>
+                </ul>
             </div>
 
             <div class="col-12">
-                <div class="sorting-wrapper">
-                    <ul class="sorting-list">
-                        <li><a href="#" class="active">Все новости</a></li>
-                        <li><a href="#">Оборудование</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Оборудование</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Оборудование</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                        <li><a href="#">Интервью</a></li>
-                    </ul>
-                    <a href="#" class="still-links">Ещё <span class="icon-arrow"><img src="img/arrow-back.svg"
-                                                                                      alt=""></span></a>
-                </div>
-
-
+                <h1>
+                    В 2020 году в России начнется установка умных счетчиков. Что нужно знать
+                </h1>
+                <div class="date">11.05.2020</div>
             </div>
 
+        </div>
+    </div>
+</main>
+
+<section class="blog-content">
+    <div class="container">
+        <div class="row">
             <div class="col-12 col-md-7 col-lg-8">
-                <div class="blog-box blog-box__max">
+                <div class="article">
+                    <div class="article-subtitle">Рассказываем о том, кто обязан устанавливать и оплачивать приборы
+                        учета нового образца в частных и
+                        многоквартирных домах
+                    </div>
+                    <div class="box-text">С 1 июля 2020 года в частных и многоквартирных домах в России по мере выхода
+                        из строя старых
+                        счетчиков на электроэнергию будут устанавливаться новые, интеллектуальные приборы учета.
+                    </div>
+
+                    <div class="box-text">О том, как работают умные счетчики, зачем они нужны, а также за чей счет их
+                        будут устанавливать, — в
+                        коротких карточках.
+                    </div>
+
+                    <div class="article-subtitle">Как это работает</div>
+                    <div class="box-text">Умный счетчик будет следить за тем, сколько электроэнергии расходуют граждане,
+                        дистанционно
+                        передавать данные в компанию. При этом в случае, если потребитель регулярно задерживает оплату
+                        счетов, ограничивать подачу электроэнергии. Новый механизм позволит переложить ответственность
+                        за
+                        неуплату счетов на непосредственного нарушителя, а не раскладывать сумму чужого долга на всех
+                        потребителей через тариф.
+                    </div>
+
+                    <div class="box-text">Канал передачи информации определяется поставщиком данной услуги. Передавать
+                        показатели с помощью
+                        новых приборов учета возможно через WI-FI, LoRaWAN, GSM, мобильный телефон и т.д.
+                    </div>
+
+                    <div class="article-subtitle">Кому установят</div>
+                    <div class="box-text">Появятся интеллектуальные приборы в домах и квартирах не сразу, а по мере
+                        выхода из строя старых
+                        счетчиков или пока не наступит срок поверки. Вышедшими из строя будут считаться те приборы,
+                        которые
+                        работают с перебоями или передают неверную информацию о потреблении. «Установка умных счетчиков
+                        в
+                        новых домах будет производиться сразу, в старых — постепенно. Не пускать в дом, чтобы произвести
+                        замену счетчиков, просто невыгодно — в таком случае расчет энергии будет производиться по
+                        нормативам
+                        с учетом повышающего коэффициента, что сделает услуги дороже», — отметила адвокат Наталья
+                        Тарасова.
+                    </div>
+
+                    <div class="article-subtitle">Кто платит</div>
+                    <div class="box-text">С июля 2020 года обязанности по учету электричества в многоквартирных жилых
+                        зданиях будут
+                        возлагаться на гарантирующих поставщиков (ими являются основные энергосбытовые компании
+                        регионов), а
+                        для остальных потребителей — на электросетевые компании. Эти организации обязаны будут
+                        установить
+                        приборы учета нового типа. Расходы на обслуживание систем будут включены в тариф за
+                        электроэнергию.
+                        Однако стоимость не будет заметна для потребителей, так как, согласно закону, платеж за
+                        коммуналку
+                        ограничен уровнем инфляции. Граждане, которые не получат в срок новые приборы учета, будут иметь
+                        право не платить за электричество.
+                    </div>
+
+                    <div class="article-subtitle">Штрафы</div>
+                    <div class="box-text">Для собственников, в чьих квартирах своевременно не установили счетчики,
+                        штрафов не предусмотрено.
+                        «Однако на организации, которые не смогут обеспечить учет с помощью умных счетчиков, будут
+                        наложены
+                        санкции. Минэнерго России предлагает ввести штрафы для гарантирующих поставщиков электроэнергии,
+                        которые с 2023 года не обеспечат умными приборами учета многоквартирные дома», — рассказал
+                        Алексей
+                        Гавришев, адвокат, управляющий партнер AVG Legal. Он пояснил, что сегодня не урегулирован вопрос
+                        о
+                        размерах штрафов.
+                    </div>
+
+                    <div class="article-subtitle">Источник: РБК</div>
+                </div>
+
+                <div class="share">
+                    <p>РАССКАЖИТЕ В СОЦИАЛЬНЫХ СЕТЯХ ИЛИ <a href="#" class="discuss-forum">ОБСУДИТЬ НА ФОРУМЕ ></a></p>
+
+                    <div class="share-line">
+                        <ul class="list-share">
+                            <li><a href="#" class="fb-links">
+                                <span class="icon fab fa-facebook-f"></span><span class="text">FACEBOOK</span>
+                            </a></li>
+
+                            <li><a href="#" class="twitter-links">
+                                <span class="icon fab fa-twitter"></span><span class="text">ТВИТТЕР</span>
+                            </a></li>
+
+                            <li><a href="#" class="vk-links">
+                                <span class="icon fab fa-vk"></span><span class="text">ВКОНТАКТЕ</span>
+                            </a></li>
+
+                            <li><a href="#" class="ok-links">
+                                <span class="icon fab fa-odnoklassniki"></span><span class="text">ОДНОКЛАССНИКИ</span>
+                            </a></li>
+                        </ul>
+
+                        <div class="total-share">28
+                            ПОДЕЛИЛИСЬ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-article">
+                    <a href="#" class="article-links">< Предыдущая новость</a>
+                    <div class="pagination-title">НОВОСТИ</div>
+                    <a href="#" class="article-links">Следующая новость ></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4">
+                <a href="#" class="discuss-forum">ОБСУДИТЬ НА ФОРУМЕ ></a>
+
+                <form method="post" class="form form-updates">
+                    <h3>СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ</h3>
+                    <div class="form-group">
+                        <span>Имя</span>
+                        <label>
+
+                            <input type="text" class="form-control" placeholder="Имя" name="name" required></label>
+                    </div>
+                    <div class="form-group">
+                        <span>Электронная почта</span>
+                        <label>
+                            <input type="text" class="form-control" placeholder="Электронная почта" name="mail"
+                                   required></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Подписаться</button>
+                </form>
+
+                <div class="blog-box">
                     <a href="#" class="blog-box__img">
-                        <img src="img/blog1.jpg" alt="">
+                        <img src="img/blog2.jpg" alt="">
                     </a>
                     <a href="#" class="blog-box__name">
-                        <p>В 2020 году в России начнется установка умных счетчиков. Что нужно знать</p>
+                        <p>Обновление 2.4.1. Основные изменения</p>
                     </a>
 
-                    <div class="blog-box__bottom bg-light-green">
-                        <div class="blog-box__category">НОВОСТЬ</div>
-                        <div class="date">11.05.2020</div>
+                    <div class="blog-box__bottom bg-light-red">
+                        <div class="blog-box__category">ОБНОВЛЕНИЕ</div>
+                        <div class="date">23.03.2020</div>
+
+                        <a href="#" class="links-discuss">
+                            <span class="icon"><img src="img/discuss.svg" alt=""></span>
+                            <span class="text">ОБСУДИТЬ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="#" class="blog-box__img">
+                        <img src="img/blog2.jpg" alt="">
+                    </a>
+                    <a href="#" class="blog-box__name">
+                        <p>Обновление 2.4.1. Основные изменения</p>
+                    </a>
+
+                    <div class="blog-box__bottom bg-light-red">
+                        <div class="blog-box__category">ОБНОВЛЕНИЕ</div>
+                        <div class="date">23.03.2020</div>
+
+                        <a href="#" class="links-discuss">
+                            <span class="icon"><img src="img/discuss.svg" alt=""></span>
+                            <span class="text">ОБСУДИТЬ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-box">
+                    <a href="#" class="blog-box__img">
+                        <img src="img/blog3.jpg" alt="">
+                    </a>
+                    <a href="#" class="blog-box__name">
+                        <p>NEKTA поддерживает устройства Милур</p>
+                    </a>
+
+                    <div class="blog-box__bottom bg-light-blue">
+                        <div class="blog-box__category">ОБОРУДОВАНИЕ</div>
+                        <div class="date">23.03.2020</div>
 
                         <a href="#" class="links-discuss">
                             <span class="icon"><img src="img/discuss.svg" alt=""></span>
@@ -209,31 +346,16 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-5 col-lg-4">
-                <div class="top-news">
-                    <h3>ТОП 5 НОВОСТЕЙ</h3>
 
-                    <a href="#" class="top-news__item">
-                        <span class="top-news__img"><img src="img/news-min.png" alt=""></span>
-                        <span class="tio-news__name">Обновление 2.4.1. Основные изменения</span>
-                    </a>
-                    <a href="#" class="top-news__item">
-                        <span class="top-news__img"><img src="img/news-min.png" alt=""></span>
-                        <span class="tio-news__name">Обновление 2.4.1. Основные изменения</span>
-                    </a>
-                    <a href="#" class="top-news__item">
-                        <span class="top-news__img"><img src="img/news-min.png" alt=""></span>
-                        <span class="tio-news__name">Обновление 2.4.1. Основные изменения</span>
-                    </a>
-                    <a href="#" class="top-news__item">
-                        <span class="top-news__img"><img src="img/news-min.png" alt=""></span>
-                        <span class="tio-news__name">Обновление 2.4.1. Основные изменения</span>
-                    </a>
-                    <a href="#" class="top-news__item">
-                        <span class="top-news__img"><img src="img/news-min.png" alt=""></span>
-                        <span class="tio-news__name">Обновление 2.4.1. Основные изменения</span>
-                    </a>
-                </div>
+        </div>
+    </div>
+</section>
+
+<section class="recommended-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>ЧИТАЙТЕ ТАКЖЕ</h2>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
@@ -279,54 +401,12 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <form method="post" class="form form-updates">
-                    <h3>СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ</h3>
-                    <div class="form-group">
-                        <span>Имя</span>
-                        <label>
-
-                            <input type="text" class="form-control" placeholder="Имя" name="name" required></label>
-                    </div>
-                    <div class="form-group">
-                        <span>Электронная почта</span>
-                        <label>
-                            <input type="text" class="form-control" placeholder="Электронная почта" name="mail"
-                                   required></label>
-                    </div>
-
-                    <button type="submit" class="btn btn-submit">Подписаться</button>
-                </form>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
                 <div class="blog-box">
                     <a href="#" class="blog-box__img">
-                        <img src="img/blog4.jpg" alt="">
+                        <img src="img/blog2.jpg" alt="">
                     </a>
                     <a href="#" class="blog-box__name">
-                        <p>Новый продукт NEKTA Core</p>
-                    </a>
-
-                    <div class="blog-box__bottom bg-salad">
-                        <div class="blog-box__category">ИНТЕРВЬЮ</div>
-                        <div class="date">23.03.2020</div>
-
-                        <a href="#" class="links-discuss">
-                            <span class="icon"><img src="img/discuss.svg" alt=""></span>
-                            <span class="text">ОБСУДИТЬ</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="blog-box">
-                    <a href="#" class="blog-box__img">
-                        <img src="img/blog3.jpg" alt="">
-                    </a>
-                    <a href="#" class="blog-box__name">
-                        <p>NEKTA поддерживает устройства Милур</p>
+                        <p>Обновление 2.4.1. Основные изменения</p>
                     </a>
 
                     <div class="blog-box__bottom bg-light-red">
@@ -340,32 +420,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="blog-box">
-                    <a href="#" class="blog-box__img">
-                        <img src="img/blog3.jpg" alt="">
-                    </a>
-                    <a href="#" class="blog-box__name">
-                        <p>NEKTA поддерживает устройства Милур</p>
-                    </a>
-
-                    <div class="blog-box__bottom bg-light-red">
-                        <div class="blog-box__category">ОБНОВЛЕНИЕ</div>
-                        <div class="date">23.03.2020</div>
-
-                        <a href="#" class="links-discuss">
-                            <span class="icon"><img src="img/discuss.svg" alt=""></span>
-                            <span class="text">ОБСУДИТЬ</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
-
 
 <footer>
     <div class="container">
