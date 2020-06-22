@@ -37,7 +37,10 @@ $('.links-load').on('click', function (e) {
 
 $('.datepicker').datepicker({
     autoclose: true,
-    language: 'ru'
+    language: 'ru',
+    format: "mm",
+    viewMode: "months",
+    minViewMode: "months",
 });
 
 $('.still-links').click(function (e) {

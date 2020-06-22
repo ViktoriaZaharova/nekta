@@ -2308,7 +2308,8 @@ textarea {
   .blog-box__max .links-discuss {
     font-size: 20px; }
     .blog-box__max .links-discuss .icon {
-      width: 30px; }
+      width: 30px;
+      height: 30px; }
 
 .blog-box__img {
   width: 100%;
@@ -2359,13 +2360,13 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px 10px;
-  font-size: 10px; }
+  font-size: 14px; }
   .blog-box__bottom .date {
     color: #FFFFFF; }
 
 .blog-box__category {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
   text-transform: uppercase;
   margin: 0 20px 0 0; }
 
@@ -2380,14 +2381,32 @@ textarea {
   margin: 0 auto; }
   .links-discuss .icon {
     margin: 0 13px 0 0;
-    width: 13px; }
+    width: 13px;
+    height: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .links-discuss .icon svg {
+      width: 100%;
+      height: 100%; }
+      .links-discuss .icon svg path {
+        -webkit-transition: .3s ease;
+        transition: .3s ease; }
   .links-discuss:hover {
     color: #000; }
+    .links-discuss:hover .icon svg path {
+      fill: #000; }
 
 .top-news {
   margin: 0 0 30px;
-  -webkit-box-shadow: 0px 2.65285px 2.65285px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2.65285px 2.65285px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2.65285px 2.65285px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2.65285px 2.65285px rgba(0, 0, 0, 0.25);
   background: #FAFAFA;
   border-radius: 6px;
   padding: 30px 25px;
@@ -3356,4 +3375,6 @@ textarea {
   .modal-title {
     font-size: 24px; }
   .nekta-callback .callback-content {
-    padding: 30px 20px; } }
+    padding: 30px 20px; }
+  .blog-box__category {
+    margin: 0 10px 0 0; } }
