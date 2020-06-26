@@ -140,8 +140,12 @@ h2
   color: #fff
   background: $btn
   height: 53px
+  border: 1px solid $accent
   &:hover
-    background: $accent
+    background: transparent
+    color: $accent
+    border: 1px solid $accent
+
 
 .btn-call
   background: $btn
@@ -150,9 +154,11 @@ h2
   padding: 5px 10px
   font-weight: bold
   border-radius: 5px
+  border: 1px solid $btn
   &:hover
-    color: #fff
-    background: $accent
+    color: $btn
+    background: transparent
+    border: 1px solid $btn
 
 .btn-border
   background: transparent
@@ -164,10 +170,12 @@ h2
   border-radius: 5px
   color: #fff
   width: 232px
+  border: 1px solid $btn2
   height: 54px
   &:hover
-    color: #fff
-    background: $btn
+    color: $btn2
+    background: transparent
+    border: 1px solid $btn2
 
 .btn-red
   background: #CC6666
@@ -175,9 +183,11 @@ h2
   color: #fff
   width: 232px
   height: 54px
+  border: 1px solid #CC6666
   &:hover
-    background: #393F50
-    color: #fff
+    background: transparent
+    color: #CC6666
+    border: 1px solid #CC6666
 
 .btn-border-accent
   border: 2px solid $btn2
@@ -2205,6 +2215,8 @@ textarea
 //pros-partners
 .pros-partners
   padding: 80px 0 0
+  z-index: 1
+  position: relative
   background: url("../img/bg-partner2.jpg") #000 no-repeat center
     size: cover
   h2
@@ -2227,6 +2239,7 @@ textarea
     transform: translate(0,-50%)
     left: -550px
     z-index: 1
+    opacity: .52
   .text
     p
       padding: 30px 0
@@ -2299,9 +2312,7 @@ textarea
     margin: 0 auto
 
 .pagination-partners
-  display: flex
-  align-items: center
-  justify-content: center
+
   li
     margin: 0 5px 0 0
     &:first-child
@@ -2321,10 +2332,7 @@ textarea
 
 .partners-wrapper
   width: 100%
-  display: flex
-  align-items: center
-  justify-content: space-between
-  flex-wrap: wrap
+
   margin: 50px 0 0
   .partners-box
     width: 20%
@@ -2333,6 +2341,57 @@ textarea
     justify-content: center
     padding: 10px
     margin: 0 0 30px
+
+.partners-slider__wrap
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+
+.partners-slider__nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .slick-arrow
+    top: 0
+    transform: translate(0)
+    position: relative
+  .slick-next
+    order: 1
+
+  .slick-dots
+    margin: 0 16px
+    position: relative
+    bottom: 0
+    counter-reset: item
+    display: flex
+    align-items: center
+    justify-content: center
+    width: auto
+    li
+      margin: 0 5px 0 0
+      width: auto
+      height: auto
+      font-size: 18px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #4397A5
+      text-decoration: underline
+      &:last-child
+        margin: 0
+      button
+        display: none
+      &:before
+        content: counters(item, ".")
+        counter-increment: item
+        display: inline-block
+    .slick-active
+      text-decoration: none
+
+
 
 @import "media"
 // Всегда в конце

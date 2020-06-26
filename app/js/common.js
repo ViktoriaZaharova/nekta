@@ -24,6 +24,15 @@ $('.news-slider').slick({
     ]
 });
 
+$('.partners-wrapper').slick({
+    slidesToShow: 1,
+    dots: true,
+    appendDots: '.partners-slider__nav',
+    appendArrows: '.partners-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+});
+
 $('.links-load').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.filter-box').find('ul li:hidden').slideDown();
