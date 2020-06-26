@@ -284,6 +284,9 @@
   .list-share li a
     font-size: 12px
 
+  .opportunities-partners:before, .pros-partners:before, .nekta-function__partners:before, .partners:before
+    display: none
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .header-main
@@ -462,7 +465,21 @@
   .discuss-forum
     margin: 0 0 20px
 
+  .pros-partners .btn
+    margin: 20px auto 40px
 
+  .pros-partners
+    .text
+      margin: 0 0 30px
+
+  .partners-wrapper .partners-box
+    width: 50%
+
+  .partners
+    padding: 0 0 50px
+
+  .pagination-partners
+    margin: 30px auto 0
 
 @media only screen and (max-width : 600px)
   .card-block
@@ -650,6 +667,26 @@
   .list-share li
     width: 50%
 
+  .main-partners
+    background: url("../img/partner-bg1.jpg") no-repeat center
+      size: cover
+    &:before
+      display: none
+    p
+      margin: 30px auto
+    .btn
+      margin: 0 auto
+
+  .opportunities-partners h3
+    font-size: 20px
+    padding: 0 0 10px
+    margin: 0 0 10px
+
+  .opportunities-partners h2
+    margin: 0 0 30px
+
+  .pros-box h3
+    font-size: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)
