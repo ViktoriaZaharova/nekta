@@ -1564,6 +1564,9 @@ input, .form-control {
 .form-group__title {
   margin: 0 0 28px;
   font-size: 24px; }
+  .form-group__title span {
+    color: #9E9E9E;
+    font-size: 16px; }
 
 textarea {
   width: 100%;
@@ -2962,9 +2965,7 @@ textarea {
     margin: 0; }
 
 .support-about {
-  font-size: 28px; }
-
-.support-about {
+  font-size: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2972,13 +2973,17 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .support-about p {
+    margin: 0 0 20px; }
+    .support-about p:last-child {
+      margin: 0; }
 
 .support-img {
   max-width: 612px;
@@ -3187,6 +3192,47 @@ textarea {
     .stars .star.active {
       background: url("../img/star-selected.svg") no-repeat center;
         background-size: contain; }
+
+.support-page .btn {
+  width: 232px;
+  margin: 30px 0 0 0; }
+
+.question-box__wrapper {
+  width: 100%;
+  -webkit-box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25), -4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25), -4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden; }
+
+.pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0 0; }
+  .pagination li {
+    margin: 0 12px 0 0; }
+    .pagination li:last-child {
+      margin: 0; }
+    .pagination li:first-child a, .pagination li:last-child a {
+      font-size: 68px; }
+    .pagination li a {
+      color: #408FAC;
+      font-size: 48px;
+      line-height: 63px; }
+    .pagination li .active {
+      text-decoration: underline; }
+
+.support-page {
+  padding: 70px 0 240px; }
+
+#modalQuestion .modal-dialog {
+  max-width: 1125px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -3655,7 +3701,10 @@ textarea {
   .question-last .links-grey {
     font-size: 18px; }
   .question-box {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .pagination li a, .pagination li:first-child a, .pagination li:last-child a {
+    font-size: 30px;
+    line-height: 1; } }
 
 @media only screen and (max-width: 600px) {
   .card-block {
