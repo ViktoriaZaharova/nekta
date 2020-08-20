@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nekta</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+          integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header-main">
+
+                <div class="header-top">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                    <a href="tel:+78007005573" class="phone">
+                        <span class="icon"><img src="img/phone.svg" alt=""></span>
+                        <span class="text">8 800 700 55 73</span>
+                    </a>
+
+                    <button class="btn btn-call d-flex d-md-none" data-toggle="modal" data-target="#modalCallback">
+                        Оставить заявку
+                    </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="navbar navbar-expand-md">
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Продукты
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <div class="dropdown-menu__logos">
+                                        <a class="dropdown-item logo-item" href="#">
+                                            <span class="img-logo"><img src="img/logo1.jpg" alt=""></span>
+                                            <span class="description-logo">
+                                            Универсальная платформа для GPS/ГЛОНАСС мониторинга и Iot
+                                        </span>
+                                        </a>
+                                        <a class="dropdown-item logo-item" href="#">
+                                            <span class="img-logo"><img src="img/logo2.jpg" alt=""></span>
+                                            <span class="description-logo">
+                                            Бэкенд платформа, разработанная для быстрого подключения любых типоы устройств к телематическим системам
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Оборудование
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Собщество
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Компания
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Задать вопрос</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Форум</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Личный кабинет</a>
+                            </li>
+                            <li class="nav-item d-none d-md-flex">
+                                <button class="btn btn-call" data-toggle="modal" data-target="#modalCallback">
+                                    Оставить заявку
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="equipment support">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h1 class="title-page">Техподдержка</h1></div>
+            <div class="col-12 col-lg-7">
+                <div class="support-about">
+                    <p>Пользователи системы NEKTA могут рассчитывать на своевременную техническую помощь с нашей
+                        стороны. Мы не только оказываем техническую консультацию, но и обучаем партнеров тонкостям
+                        продуктов, необходимых для решения специфических бизнес-задач. Наши специалисты рассматривают
+                        абсолютно все заявки от клиентов и оперативно предлагают оптимальное решение.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="support-img">
+                    <img src="img/img2.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-box__icon"><img src="img/phone-call.png" alt=""></div>
+                    <a href="tel:+78007005573" class="support-box__name">Позвонить в техподдержку</a>
+                    <a href="tel:+78007005573" class="phone support-box__text">8-800-700-55-73 доб. 114</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-box__icon"><img src="img/mail-call.png" alt=""></div>
+                    <a href="#" class="support-box__name" data-toggle="modal" data-target="#modalMail">Написать на
+                        почту</a>
+                    <a href="mailto:help@nekta.tech" class="mail support-box__text">help@nekta.tech</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-box__icon"><img src="img/book-call.png" alt=""></div>
+                    <a href="#" class="support-box__name">Документация по продукту</a>
+                    <span class="support-box__text">Все самое полезное</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="support-callback">
+    <div class="container-fluid">
+        <div class="col-12">
+            <h2>Нам вожно Ваше мнение, пожалуйста, оставьте отзыв о качестве обслуживания</h2>
+            <button class="btn btn-accent" data-toggle="modal" data-target="#modalReviews">Оставить отзыв</button>
+        </div>
+    </div>
+</div>
+
+<section class="question-last">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2>Последние вопросы на сайте</h2>
+            </div>
+
+            <div class="col-12">
+                <div class="question-box">
+                    <div class="question-box__text">
+                        <div class="question-name">Nekta Server</div>
+
+                        <div class="question-box__content">
+
+                            <p>Здравствуйте! Хотелось бы приобрести серверную версию платформы. Могу ли я самостоятельно
+                                добавлять в неё собственные устройства, а так же конвертеры для обработки данных с этих
+                                устройств? Так же интересует стоимость серверного варианта платформы. С уважением
+                                Владимир.</p>
+                        </div>
+
+                        <a href="#" class="links-question">Развернуть ответ</a>
+                    </div>
+
+                    <ul class="list-statistic">
+                        <li>
+                            <p>19</p>
+                            <p>просм.</p>
+                        </li>
+                        <li>
+                            <p>1</p>
+                            <p>ответ</p>
+                        </li>
+                    </ul>
+
+
+                    <div class="answer">
+                        <p>Василий, добрый день.</p>
+                        <p>На данный момент приложение NEKTA CLOUD для iOS выведено из магазина на
+                            доработку.</p>
+                        <p>Как только все работы и тесты будут проведены, мы добавим приложение в App Store</p>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <div class="question-box__text">
+                        <div class="question-name">приложение ios</div>
+
+                        <div class="question-box__content">
+                            <p>как называется приложение для ios</p>
+                        </div>
+                        <a href="#" class="links-question">Развернуть ответ</a>
+                    </div>
+                    <ul class="list-statistic">
+                        <li>
+                            <p>19</p>
+                            <p>просм.</p>
+                        </li>
+                        <li>
+                            <p>1</p>
+                            <p>ответ</p>
+                        </li>
+                    </ul>
+
+
+                    <div class="answer">
+                        <p>Василий, добрый день.</p>
+                        <p>На данный момент приложение NEKTA CLOUD для iOS выведено из магазина на
+                            доработку.</p>
+                        <p>Как только все работы и тесты будут проведены, мы добавим приложение в App Store</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="links-grey">Все вопросы ></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-sm-5">
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.34 23.07">
+                        <g data-name="Слой 2">
+                            <g data-name="Layer 1">
+                                <path class="cls-1"
+                                      d="M.59,23.07A.6.6,0,0,1,0,22.48V.6A.6.6,0,0,1,.59,0a.6.6,0,0,1,.6.6V22.48A.6.6,0,0,1,.59,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M22.47,23.07a.59.59,0,0,1-.59-.59V.6a.59.59,0,0,1,.59-.6.6.6,0,0,1,.6.6V22.48A.6.6,0,0,1,22.47,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M44.35,23.07a.6.6,0,0,1-.6-.59V.6A.6.6,0,0,1,45,.6V22.48A.6.6,0,0,1,44.35,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M88.11,23.07a.6.6,0,0,1-.6-.59V.6A.6.6,0,1,1,88.7.6V22.48A.6.6,0,0,1,88.11,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M166.86,23.07a.59.59,0,0,1-.59-.59v-11a.59.59,0,0,1,.59-.59.6.6,0,0,1,.6.59v11A.6.6,0,0,1,166.86,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M188.74,23.07a.59.59,0,0,1-.59-.59v-11a.59.59,0,0,1,.59-.59.6.6,0,0,1,.6.59v11A.6.6,0,0,1,188.74,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M22.47,23.07a.59.59,0,0,1-.42-.18L5.64,6.49a.6.6,0,1,1,.85-.84L22.9,22.05a.6.6,0,0,1-.43,1Z"/>
+                                <path class="cls-1"
+                                      d="M66.23,1.19H44.35a.59.59,0,0,1-.6-.59.6.6,0,0,1,.6-.6H66.23a.59.59,0,0,1,.59.6A.58.58,0,0,1,66.23,1.19Z"/>
+                                <path class="cls-1" d="M66.23,23.07H44.35a.6.6,0,1,1,0-1.19H66.23a.6.6,0,0,1,0,1.19Z"/>
+                                <path class="cls-1" d="M55.29,12.13H44.35a.6.6,0,1,1,0-1.19H55.29a.6.6,0,1,1,0,1.19Z"/>
+                                <path class="cls-1"
+                                      d="M99.24,11.93a.58.58,0,0,1-.42-.17.61.61,0,0,1,0-.85L109.56.17a.6.6,0,0,1,.84.85L99.66,11.76A.55.55,0,0,1,99.24,11.93Z"/>
+                                <path class="cls-1"
+                                      d="M110.18,22.87a.63.63,0,0,1-.42-.17L98.82,11.76a.61.61,0,0,1,0-.85.6.6,0,0,1,.84,0L110.6,21.85a.6.6,0,0,1-.42,1Z"/>
+                                <path class="cls-1"
+                                      d="M150.16,1.19H128.28a.58.58,0,0,1-.59-.59.59.59,0,0,1,.59-.6h21.88a.6.6,0,0,1,.6.6A.59.59,0,0,1,150.16,1.19Z"/>
+                                <path class="cls-1"
+                                      d="M139.22,23.07a.6.6,0,0,1-.6-.59V.6a.6.6,0,1,1,1.2,0V22.48A.6.6,0,0,1,139.22,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M188.74,12.13a.59.59,0,0,1-.59-.6,10.35,10.35,0,0,0-20.69,0,.6.6,0,0,1-.6.6.59.59,0,0,1-.59-.6,11.54,11.54,0,0,1,23.07,0A.6.6,0,0,1,188.74,12.13Z"/>
+                                <path class="cls-1" d="M188.74,13.87H177.8a.6.6,0,0,1,0-1.19h10.94a.6.6,0,1,1,0,1.19Z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="mailto:info@nekta.tech" class="mail">info@nekta.tech</a>
+                <p class="copyright">Copyright © 2002-2020</p>
+            </div>
+            <div class="col-12 col-xl-4 col-sm-7">
+                <h4>Мы в социальных сетях</h4>
+                <div class="list-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-5">
+                <h4>Следите за обновлениями</h4>
+
+                <form method="post" class="form form-subscribe">
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Введите имя*" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Email*" required></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="click-scroll__top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.82 4.63">
+        <g>
+            <g>
+                <polygon
+                        points="3.92 4.63 7.82 0.73 7.29 0.2 4.29 3.2 4.29 3.2 3.91 3.53 3.54 3.16 0.55 0 0 0.52 3.92 4.63 3.92 4.1 3.92 4.63"/>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Заявка на интеграцию</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Имя</div>
+                        <label>
+                            <input type="text" class="form-control" name="name" placeholder="Имя">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" placeholder="E-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Оборудование на интеграцию</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl"></textarea>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-white" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalReviews" tabindex="-1" role="dialog" aria-labelledby="exampleModalReviews"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalReviews">Отзыв</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Имя</div>
+                        <label>
+                            <input type="text" class="form-control" name="name" required placeholder="Имя">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" required placeholder="E-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Пожалуйста, оцените работу техподдержки</div>
+                        <div class="stars">
+                            <div class="star active"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Отзыв</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl"></textarea>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-red" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalMail"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalMail">Напишите нам</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Предложение, замечание, просьба или вопрос.</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" required placeholder="E-mail">
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-red" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

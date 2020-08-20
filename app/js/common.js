@@ -44,6 +44,60 @@ $('.links-load').on('click', function (e) {
     }
 });
 
+$('.links-question').click(function(e){
+    e.preventDefault();
+
+    var
+        $this = $(this),
+        content = $(this).parents('.question-box').find('.answer');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Свернуть ответ');
+
+        content.slideDown();
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Развернуть ответ');
+
+        content.slideUp();
+    }
+});
+
+
+
+$(document).ready(function () {
+    var cStars = function(nowPos) {
+        // У всех убираем active
+        $('.stars .star').removeClass('active');
+
+        for (var i = 0; nowPos + 1 > i; i++) {
+            $('.stars .star').eq(i).toggleClass('active');
+        }
+    }
+// переменная содержит количество активных звезд
+    var starsCount = $('.star.active').length;
+
+// При наведении
+    $('.stars .star').hover(function() {
+        cStars($(this).index());
+    });
+
+// При клике
+    $('.stars .star').click(function() {
+        cStars($(this).index());
+        // меняем количество по клику
+        starsCount = $('.star.active').length;
+    });
+
+// Как только отводим мышку, возвращаем количество активных айтемов, которые были изначально
+    $('.stars .star').on('mouseleave', function() {
+        cStars(+starsCount - 1);
+    });
+});
+
+
 $('.datepicker').datepicker({
     autoclose: true,
     language: 'ru',
@@ -56,4 +110,7 @@ $('.still-links').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('click').siblings('.sorting-list').toggleClass('open');
 });
+
+
+
 

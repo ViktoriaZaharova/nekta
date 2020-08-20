@@ -28,11 +28,30 @@
   .card-line .td-protocol
     width: 105px
 
-  .equipment-img
+  .equipment-img, .support-img
     max-width: 350px
 
   .list-share li a
     width: 150px
+
+  .support-img
+    margin: -50px auto 0
+
+@media only screen and (max-width : 1300px)
+  .support-box
+    width: 100%
+
+  .support-box__name
+    font-size: 20px
+
+  .support-box__text
+    font-size: 16px
+
+  .support-box__icon
+    height: 100px
+    img
+      width: auto
+      height: 100%
 
 @media only screen and (max-width : 1199px)
   .product-box__it
@@ -69,7 +88,7 @@
   .title
     font-size: 44px
 
-  .equipment-about
+  .equipment-about, .support-about
     font-size: 18px
 
   .equipment .container-fluid
@@ -163,6 +182,21 @@
       width: 25%
       a
         width: 100%
+
+  .support-callback h2
+    font-size: 34px
+
+  .question-box
+    font-size: 18px
+
+  .question-name
+    font-size: 20px
+
+  .question-last
+    padding: 40px 0 30px
+    h2
+      font-size: 34px
+      margin: 0 0 30px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -286,6 +320,15 @@
 
   .opportunities-partners:before, .pros-partners:before, .nekta-function__partners:before, .partners:before
     display: none
+
+  .support-box
+    margin: 0 0 30px
+    height: 320px
+
+  .support
+    padding: 70px 0
+    h1
+      margin: 0 auto 30px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -481,6 +524,39 @@
   .partners-slider__nav
     margin: 30px auto 0
     justify-content: center
+
+  .support-box__icon
+    height: auto
+    width: 100px
+    margin: 0 auto
+    img
+      height: auto
+      width: 100%
+
+  .support-box
+    height: auto
+    padding: 30px 0
+
+  .support-img
+    margin: 0 auto
+
+  .support-about
+    font-size: 16px
+
+  .support-callback h2
+    font-size: 24px
+
+  .support-callback .btn
+    font-size: 16px
+
+  .support
+    padding: 50px 0
+
+  .question-last .links-grey
+    font-size: 18px
+
+  .question-box
+    font-size: 16px
 
 @media only screen and (max-width : 600px)
   .card-block
@@ -688,6 +764,13 @@
 
   .pros-box h3
     font-size: 20px
+
+  .question-box__text
+    width: 100%
+    margin: 0 0 20px
+
+  .question-last h2
+    font-size: 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)

@@ -87,6 +87,7 @@ a
   transition: .3s ease
   text-decoration: none
   outline: none
+
   &:hover, &:focus
     outline: none
     text-decoration: none
@@ -132,6 +133,7 @@ h2
   outline: none
   font-size: 16px
   font-family: $default-font
+
   &:hover, &:focus
     border: none
     box-shadow: none
@@ -141,6 +143,7 @@ h2
   background: $btn
   height: 53px
   border: 1px solid $accent
+
   &:hover
     background: transparent
     color: $accent
@@ -155,6 +158,7 @@ h2
   font-weight: bold
   border-radius: 5px
   border: 1px solid $btn
+
   &:hover
     color: $btn
     background: transparent
@@ -162,6 +166,7 @@ h2
 
 .btn-border
   background: transparent
+
   &:hover
     background: $accent
 
@@ -172,6 +177,7 @@ h2
   width: 232px
   border: 1px solid $btn2
   height: 54px
+
   &:hover
     color: $btn2
     background: transparent
@@ -184,6 +190,7 @@ h2
   width: 232px
   height: 54px
   border: 1px solid #CC6666
+
   &:hover
     background: transparent
     color: #CC6666
@@ -195,6 +202,7 @@ h2
   height: 54px
   max-width: 324px
   color: $btn2
+
   &:hover
     border-color: $btn2
     background: $btn2
@@ -206,6 +214,7 @@ h2
   width: 100%
   height: 54px
   border-radius: 5px
+
   &:hover
     background: $btn2
     color: #fff
@@ -214,15 +223,20 @@ h2
   border: none
     radius: 5px
   overflow: hidden
+
   .btn
     border: 1px solid $btn
+
   .btn-accent
     width: 278px
+
     &:hover
       border-color: #4397A5
+
   .btn-border
     width: 196px
     border-radius: 0 5px 5px 0
+
     &:hover
       border-color: #4397A5
 
@@ -233,6 +247,7 @@ h2
   border: none
   border-radius: 0
   display: none
+
   span
     width: 20px
     display: flex
@@ -241,6 +256,7 @@ h2
     height: 2px
     border-radius: 3px
     background: #1B1A1F
+
   &:hover, &:focus
     box-shadow: none
     outline: none
@@ -248,6 +264,7 @@ h2
 nav.navbar .dropdown:hover
   .dropdown-toggle::after
     transform: rotate(180deg)
+
   > .dropdown-menu
     display: flex
     align-items: center
@@ -256,11 +273,13 @@ nav.navbar .dropdown:hover
 .navbar
   padding: 0
   width: 100%
+
   .navbar-nav
     width: 100%
     display: flex
     align-items: stretch
     justify-content: space-between
+
     .nav-link
       padding: 20px 0
 
@@ -275,6 +294,7 @@ nav.navbar .dropdown:hover
   height: 100%
   font-family: 'Roboto', sans-serif
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -284,11 +304,13 @@ nav.navbar .dropdown:hover
     height: 5px
     background: transparent
     transition: .3s ease
+
   &:hover
     color: $accent
+
     &:before
       background: #4397A5
-    
+
 
 .nav-item
   flex: 1
@@ -299,13 +321,16 @@ nav.navbar .dropdown:hover
   border:
     right: 1px solid $accent
     top: 1px solid $accent
+
   &:last-child
     border: none
       top: 1px solid $accent
+
     .nav-link
       padding: 0
       height: auto
       margin: 15px 0 0
+
     .links-details
       color: #4397A5
       margin: 0 0 15px
@@ -343,9 +368,11 @@ nav.navbar .dropdown:hover
   justify-content: center
   width: auto
   margin: 0 0 9px
+
   &:hover
     background: transparent
     color: $accent
+
     img
       opacity: .7
 
@@ -363,6 +390,7 @@ nav.navbar .dropdown:hover
   width: 240px
   white-space: normal
   padding: 10px 15px
+
   .img-logo
     min-height: 49px
     max-width: 150px
@@ -373,6 +401,7 @@ nav.navbar .dropdown:hover
 header
   border-bottom: 1px solid $accent
   box-shadow: 0 18px 19px rgba(29, 29, 27, 0.15)
+
   .btn-call
     width: 100%
     height: 100%
@@ -388,6 +417,7 @@ header
   align-items: center
   justify-content: space-between
   width: 100%
+
   .logo
     margin: 0
 
@@ -397,10 +427,12 @@ header
   color: #000000
   font-size: 24px
   font-family: 'Roboto', sans-serif
+
   .icon
     width: 18px
     height: 18px
     margin: 0 7px 0 0
+
   &:hover
     color: $accent
 
@@ -410,6 +442,7 @@ main
     size: cover
   color: #fff
   padding: 170px 0
+
   p
     font-size: 15px
     margin: 30px 0 50px
@@ -421,6 +454,7 @@ main
   padding: 108px 0 90px
   position: relative
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -430,6 +464,7 @@ main
     height: 929px
     background: url("../img/bg1.png") no-repeat center
       size: contain
+
   h2
     margin: 0 auto 115px
 
@@ -439,13 +474,16 @@ main
   position: relative
   transition: .3s ease
   margin: 0 auto
+
   &:hover
     width: 396px
+
     .product-box
       padding: 45px 35px 110px
       box-shadow: 0 18px 25px rgba(#1D1D1B, .30)
       color: #000
       height: 396px
+
     h6
       color: $link
       font-family: $clinica
@@ -458,7 +496,7 @@ main
   height: 100%
   bottom: 0
   left: 50%
-  transform: translate(-50%,0)
+  transform: translate(-50%, 0)
   display: flex
   flex-direction: column
   align-items: center
@@ -475,10 +513,10 @@ main
     display: flex
     align-items: center
     color: $accent
+
     .icon
       width: 20px
       margin: 3px 0 0 5px
-
 
 
 .product-box__icon
@@ -515,6 +553,7 @@ main
 .application
   padding: 0 0 77px
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -524,6 +563,7 @@ main
       size: contain
     width: 989px
     height: 713px
+
   .description
     text-align: center
     max-width: 575px
@@ -537,16 +577,20 @@ main
   overflow: hidden
   flex-wrap: nowrap
   width: 100%
+
   .nav-item
     flex: auto
+
   .nav-link
     width: 100%
     height: 100%
     color: #1B1A1F
     border: none
     padding: 10px
+
     &:hover
       border-color: transparent
+
   .nav-link.active
     border-color: transparent
     background: #2C3240
@@ -566,6 +610,7 @@ main
   overflow: hidden
   position: relative
   padding: 45px 45px 20px
+
   &:before
     content: ''
     position: absolute
@@ -587,6 +632,7 @@ main
   display: flex
   align-items: flex-start
   margin: 0 0 20px
+
   .number
     color: #4397A5
     font-size: 33px
@@ -598,9 +644,11 @@ main
   max-width: 175px
   width: 100%
   line-height: 1.2
+
   h3
     font-size: 18px
     margin: 0 0 10px
+
   p
     opacity: .8
 
@@ -612,6 +660,7 @@ main
   padding: 0 0 50px
   position: relative
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -621,6 +670,7 @@ main
       size: contain
     width: 936px
     height: 887px
+
   h2
     margin: 0 auto 65px
 
@@ -628,7 +678,7 @@ main
   margin: 0 0 50px
   background: #fff
   border-radius: 10px
-  box-shadow: 0 18px 19px rgba(#1D1D1B,.15)
+  box-shadow: 0 18px 19px rgba(#1D1D1B, .15)
   display: flex
   flex-wrap: wrap
   flex-direction: column
@@ -643,6 +693,7 @@ main
   width: 100%
   display: flex
   align-items: center
+
   h3
     font-size: 26px
     line-height: 1
@@ -665,12 +716,13 @@ main
   position: relative
   overflow: hidden
   z-index: 1
+
   &:before
     content: ''
     position: absolute
     left: -45px
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     width: 50%
     height: 100%
     background: url("../img/bg1.jpg") no-repeat 80% center
@@ -680,28 +732,32 @@ main
   padding: 100px 0 80px
   max-width: 370px
   margin: 0 auto
+
   .description
     color: #357C96
     text-align: center
     margin: 30px auto 40px
 
 
-
-
 .form-call
   display: flex
   flex-direction: column
   align-items: center
+
   .form-group
     width: 100%
     margin: 0 0 20px
+
     label
       width: 100%
+
     input
       text-align: center
       color: rgba(#357C96, .7)
+
       &::placeholder
         color: rgba(#357C96, .7)
+
   button
     margin: 65px auto 0
 
@@ -724,6 +780,7 @@ main
     font-size: 26px
     color: #357C96
     line-height: 1
+
   .links-details
     color: #4397A5
 
@@ -731,7 +788,7 @@ main
   max-width: 342px
   height: 400px
   width: 100%
-  box-shadow: 0 18px 19px rgba(#1D1D1B,.15)
+  box-shadow: 0 18px 19px rgba(#1D1D1B, .15)
   border-radius: 10px
   display: flex
   align-items: center
@@ -742,6 +799,7 @@ main
   padding: 30px 0 0
   max-width: 290px
   width: 100%
+
   h3
     font-size: 21px
     line-height: 1
@@ -754,6 +812,7 @@ main
 .news
   position: relative
   padding: 85px 0 50px
+
   &:before
     content: ''
     position: absolute
@@ -766,11 +825,12 @@ main
 
 .line-title
   position: relative
+
   .links
     position: absolute
     right: 0
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     color: #4397A5
     text-decoration: underline
 
@@ -780,7 +840,7 @@ main
 
 .news-box
   background: #fff
-  box-shadow: 0 0 5px rgba(#000,.1)
+  box-shadow: 0 0 5px rgba(#000, .1)
   border-radius: 5px
   box-sizing: border-box
   overflow: hidden
@@ -790,6 +850,7 @@ main
   flex-direction: column
   align-items: center
   margin: 10px auto
+
   .links-details
     color: #4397A5
 
@@ -798,6 +859,7 @@ main
   display: flex
   flex-direction: column
   align-items: flex-start
+
   h3
     font-weight: bold
     margin: 10px 0 0
@@ -815,6 +877,7 @@ main
   display: flex
   align-items: center
   justify-content: center
+
   img
     width: 100%
     height: 100%
@@ -828,6 +891,7 @@ main
   display: flex
   align-items: center
   color: #3777CC
+
   .icon
     width: 15px
     margin: 3px 0 0 5px
@@ -861,6 +925,7 @@ main
   opacity: 1
   width: 13px
   height: 22px
+
   &:before
     display: none
 
@@ -868,6 +933,7 @@ main
   left: 0
   background: url("../img/arrow-slide-left.svg") no-repeat center
     size: contain
+
   &:hover, &:focus
     background: url("../img/arrow-slide-left.svg") no-repeat center
       size: contain
@@ -876,6 +942,7 @@ main
   right: 0
   background: url("../img/arrow-slide-right.svg") no-repeat center
     size: contain
+
   &:hover, &:focus
     background: url("../img/arrow-slide-right.svg") no-repeat center
       size: contain
@@ -908,6 +975,7 @@ footer
   color: #fff
   position: relative
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -917,13 +985,17 @@ footer
       size: contain
     width: 1043px
     height: 222px
+
   .logo
     margin: 0
+
     svg
       fill: #fff
+
   .mail
     color: $link
     margin: 20px 0 10px
+
   h4
     font-weight: bold
     margin: 0 0 15px
@@ -933,6 +1005,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   a
     display: flex
     align-items: center
@@ -944,8 +1017,10 @@ footer
     margin: 0 5px 0 0
     font-size: 16px
     color: #fff
+
     &:last-child
       margin: 0
+
     &:hover
       background: $btn2
 
@@ -968,9 +1043,11 @@ footer
   align-items: center
   justify-content: center
   z-index: 7
+
   svg
     transform: rotate(180deg)
     width: 100%
+
     polygon
       fill: $accent
 
@@ -983,8 +1060,10 @@ input, .form-control
   border: 1px solid $accent
   padding: 0 10px
   height: 54px
+
   &::placeholder
     color: $link
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -995,11 +1074,14 @@ input, .form-control
   align-items: center
   justify-content: space-between
   flex-wrap: wrap
+
   button
     width: 135px
+
   .form-group
     width: 150px
     margin: 0
+
     input
       border: none
 
@@ -1008,6 +1090,7 @@ input, .form-control
   padding: 27px 0 35px
   background: url("../img/bg-decor.svg") no-repeat right -90px
     size: 419px
+
   .container-fluid
     padding: 0 55px
 
@@ -1019,8 +1102,10 @@ input, .form-control
   justify-content: center
   font-size: 24px
   margin: 0 0 40px
+
   p
     margin: 0 0 30px
+
     &:last-child
       margin: 0
 
@@ -1037,8 +1122,10 @@ input, .form-control
   flex-direction: row
   align-items: center
   justify-content: flex-start
+
   .checkbox-inp
     display: none
+
   .checkbox-custom
     position: relative
     width: 22px
@@ -1051,12 +1138,14 @@ input, .form-control
     cursor: pointer
     transition: .3s ease
     margin: 0 14px 0 0
+
   .label
     display: inline-block
     vertical-align: middle
     color: #000000
     cursor: pointer
     font-size: 18px
+
   .checkbox-inp:checked + .checkbox-custom
     &::before
       content: ""
@@ -1064,7 +1153,7 @@ input, .form-control
       position: absolute
       top: 50%
       left: 50%
-      transform: translate(-50%,-50%)
+      transform: translate(-50%, -50%)
       width: 22px
       height: 22px
       background: url("../img/check.svg") no-repeat center
@@ -1080,10 +1169,12 @@ input, .form-control
   border: 1px solid #4397A5
     top: 10px solid #4397A5
   padding: 7px 13px 11px
+
   ul
     li
       margin: 0 0 19px
       display: none
+
       &:nth-child(-n+5)
         display: block
 
@@ -1098,6 +1189,7 @@ input, .form-control
   font-size: 18px
   text-decoration: underline
   text-align: center
+
   &:hover
     color: #4397A5
 
@@ -1112,6 +1204,7 @@ input, .form-control
   color: #4397A5
   font-size: 18px
   font-family: 'Roboto', sans-serif
+
   &:hover
     background: #4397A5
     color: #fff
@@ -1122,17 +1215,21 @@ input, .form-control
   width: 100%
   position: relative
   border: 1px solid #4397A5
+
   label
     width: 100%
     border: none
+
     input
       width: 100%
       height: 36px
       padding: 0 40px 0 11px
       color: #A8A8A8
       font-size: 18px
+
       &::placeholder
         color: #A8A8A8
+
   button
     position: absolute
     right: 0
@@ -1160,9 +1257,11 @@ input, .form-control
   margin: 0 0 0 30px
   border: none
     radius: 0
+
   .nav-item
     border: none
     flex: none
+
     .nav-link
       width: 30px
       min-width: 30px
@@ -1171,20 +1270,25 @@ input, .form-control
       display: flex
       align-items: center
       justify-content: center
+
       &:before
         display: none
+
       svg
         path
           transition: .3s ease
+
       &:hover
         svg
           path
             fill: #4397A5
+
     &:nth-child(2)
       .nav-link
         width: 47px
         min-width: 47px
         height: 27px
+
   .nav-link.active
     background: transparent
 
@@ -1192,6 +1296,7 @@ input, .form-control
   background: transparent
   padding: 0
   color: #000
+
   &:before
     display: none
 
@@ -1199,22 +1304,29 @@ input, .form-control
   width: 100%
   margin: 70px 0 0
   font-size: 18px
+
   td, th
     padding: 12px 0
     vertical-align: middle
+
   tbody
     tr
       border-top: 1px solid #4397A5
+
     .td-protocol, .td-type, .td-manufacturer
       font-family: 'Roboto', sans-serif
+
   .td-type
     width: 300px
     padding: 12px 16px 12px 40px
+
   .td-number
     padding: 12px 16px
     width: 70px
+
   .td-manufacturer
     width: 215px
+
   .td-protocol
     width: 190px
     padding: 12px 26px 12px 0
@@ -1249,6 +1361,7 @@ input, .form-control
   border: none
   padding: 46px 24px 5px
   position: relative
+
   .close
     position: absolute
     top: 19px
@@ -1271,8 +1384,10 @@ input, .form-control
 
   .form-group
     margin: 0 0 26px
+
     &:last-child
       margin: 0
+
     input
       padding: 0
       border: none
@@ -1281,8 +1396,10 @@ input, .form-control
       text-align: left
       color: rgba(165, 164, 164, 0.87)
       height: 24px
+
       &::placeholder
         color: rgba(165, 164, 164, 0.87)
+
       &:focus
         color: #4397A5
 
@@ -1301,10 +1418,13 @@ textarea
   font-size: 16px
   font-family: $default-font
   color: rgba(165, 164, 164, 0.87)
+
   &::placeholder
     color: rgba(165, 164, 164, 0.87)
+
     &:focus
       color: #4397A5
+
   &:valid
     color: #4397A5
 
@@ -1315,12 +1435,14 @@ textarea
   align-items: center
   justify-content: flex-start
   flex-wrap: wrap
+
   button
     width: 161px
     height: 36px
     border: none
     border-radius: 2px
     margin: 0 35px 0 0
+
     &:last-child
       margin: 0
 
@@ -1335,8 +1457,10 @@ textarea
 .header
   .nav-item-logo
     flex: 2
+
     + .nav-item
       flex: 1.2
+
     + .nav-item + .nav-item
       flex: 1.4
 
@@ -1346,10 +1470,12 @@ textarea
   background: url("../img/bg1-1.jpg") no-repeat right center #fff
     size: 100%
   color: #393F50
+
   h1
     color: #393F50
     display: flex
     align-items: center
+
     .icon
       padding: 10px
       width: 55px
@@ -1363,16 +1489,20 @@ textarea
 
 .nekta-about
   padding: 75px 0 77px
+
   h2
     color: $btn2
     text-align: left
+
   .description
     margin: 19px 0 46px
     color: #1B1A1F
+
   .text
     font-size: 18px
     max-width: 500px
     margin: 0 0 75px
+
   .btn
     width: 298px
 
@@ -1383,6 +1513,7 @@ textarea
   padding: 94px 0 47px
   color: #fff
   font-size: 24px
+
   &:before
     content: ''
     position: absolute
@@ -1392,15 +1523,18 @@ textarea
     height: 836px
     background: url("../img/decor-bg1.png") no-repeat left center
       size: cover
+
   h2
     text-align: left
     color: #fff
     margin: 0 0 68px
+
   .text
     p
       position: relative
       margin: 0 0 50px
       padding: 22px 0 0
+
       &:before
         content: ''
         top: 0
@@ -1409,11 +1543,13 @@ textarea
         width: 2000px
         right: 150px
         position: absolute
+
       &:last-child
         margin: 0
 
 .nekta-function
   padding: 86px 0 65px
+
   h2
     text-align: left
     margin: 0 0 50px
@@ -1429,26 +1565,31 @@ textarea
   align-items: flex-start
   min-height: 393px
   color: #1B1A1F
+
   &__image
     height: 165px
     display: flex
     align-items: center
     justify-content: center
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     height: 228px
     padding: 22px 35px
     display: flex
     flex-direction: column
     align-items: flex-start
+
   &__title
     font-size: 21px
     color: #393F50
     margin: 0 0 12px
+
   .btn
     margin: auto 0 0
     width: 100%
@@ -1460,17 +1601,19 @@ textarea
   padding: 128px 43px 70px
   color: #fff
   position: relative
+
   &:before
     content: ''
     position: absolute
     left: 190px
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     background: url("../img/decor-bg2.png") no-repeat right bottom
       size: contain
     width: 832px
     height: 642px
-  >*
+
+  > *
     position: relative
     z-index: 1
 
@@ -1482,6 +1625,7 @@ textarea
   background: url("../img/decor-bg3.png") no-repeat left 125px
     size: 938px
   color: #393F50
+
   h2
     text-align: left
     margin: 0 0 68px
@@ -1505,8 +1649,10 @@ textarea
   align-items: center
   justify-content: center
   margin: 0 0 44px
+
   img
     max-height: 100%
+
   &:last-child
     margin: 0
 
@@ -1522,22 +1668,25 @@ textarea
   width: 600px
   padding: 45px 29px 52px
   position: relative
+
   &:before
     content: ''
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     width: 33px
     height: 16px
     left: -45px
     background: url("../img/arrow-double.svg") no-repeat center
       size: contain
+
   h3
     font-size: 34px
     color: #393F50
     display: flex
     align-items: center
     margin: 0 0 74px
+
     .icon
       width: 55px
       height: 55px
@@ -1563,11 +1712,12 @@ textarea
 
   &:last-child
     margin: 0
+
   &:before
     content: ''
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     width: 33px
     height: 16px
     left: -45px
@@ -1586,17 +1736,21 @@ textarea
   align-items: stretch
   justify-content: space-between
   width: 100%
+
   ul
     font-size: 21px
+
     li
       border-bottom: 1px solid #1D1D1B
       padding: 0 10px 2px 0
       margin: 0 0 11px
+
       &:last-child
         margin: 0
 
   .item-right
     width: 352px
+
     &__top
       border: 1px solid #9CB9C3
         radius: 10px
@@ -1607,25 +1761,31 @@ textarea
       justify-content: space-between
       flex-wrap: wrap
       position: relative
+
       &:before
         content: ''
         position: absolute
         top: 54%
-        transform: translate(0,-50%)
+        transform: translate(0, -50%)
         width: 33px
         height: 16px
         left: -45px
         background: url("../img/arrow-double.svg") no-repeat center
           size: contain
+
     .box
       width: 45%
       margin: 0 0 51px
+
       &:last-child, &:nth-child(3)
         margin: 0
+
       p
         font-size: 21px
+
       span
         margin: 14px 0 0
+
     &__bottom
       width: 100%
       height: 82px
@@ -1638,11 +1798,12 @@ textarea
       font-size: 21px
       margin: 70px 0 0 0
       position: relative
+
       &:before
         content: ''
         position: absolute
         top: -45px
-        transform: translate(-50%,0) rotate(90deg)
+        transform: translate(-50%, 0) rotate(90deg)
         width: 33px
         height: 16px
         left: 50%
@@ -1651,29 +1812,36 @@ textarea
 
 .nekta-callback
   margin: 113px 0 120px
+
   .callback-content
     max-width: none
     background: #9CB9C3
     border-radius: 10px
     box-shadow: 0 2px 15px rgba(29, 29, 27, 0.15)
     padding: 43px 180px 45px
+
     h2
       margin: 0 0 60px
       color: #fff
+
   .form
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-between
+
     .form-group
       max-width: 360px
       margin: 0 0 20px
+
       input
         border: none
         box-shadow: 0 2px 15px #A4B9BC
         font-size: 15px
         color: #606060
+
         &::placeholder
           color: #606060
+
     button
       margin: 20px auto 0
       font-size: 18px
@@ -1682,27 +1850,33 @@ textarea
 .blog
   padding: 70px 0 40px
   position: relative
+
   &:before, &:after
     content: ''
     position: absolute
     width: 1010px
     height: 788px
+
   &:before
     left: 0
     bottom: 0
     background: url("../img/bg7.svg") no-repeat center
       size: 100%
     transform: rotate(22.78deg)
+
   &:after
     right: 0
     top: 0
     background: url("../img/bg6.svg") no-repeat center
       size: 100%
+
   .container
     max-width: 1650px
+
   .form-search
     max-width: none
     border: 0.795354px solid #4397A5
+
     label
       input
         height: 50px
@@ -1710,12 +1884,15 @@ textarea
         font-size: 20px
         padding: 0 50px 0 10px
         color: #A8A8A8
+
         &::placeholder
           color: #A8A8A8
+
     button
       height: 100%
       width: 52px
       padding: 0
+
       img
         width: 35px
 
@@ -1734,8 +1911,10 @@ textarea
   align-items: center
   position: relative
   max-width: 275px
+
   label
     width: 100%
+
     input
       height: 50px
       border: 0.795354px solid #4397A5
@@ -1745,12 +1924,14 @@ textarea
       color: #A8A8A8
       font-size: 20px
       padding: 0 10px 0 52px
+
       &::placeholder
         color: #A8A8A8
+
   .icon
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     left: 13px
     width: 25px
 
@@ -1763,12 +1944,13 @@ textarea
   margin: 18px 0 22px
   position: relative
   padding: 0 0 11px
+
   &:before
     content: ''
     position: absolute
     bottom: 0
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     width: calc(100% + 60px)
     height: 1px
     background: #4397A5
@@ -1784,8 +1966,10 @@ textarea
   overflow: hidden
   height: 30px
   width: calc(100% - 60px)
+
   li
     margin: 0 11px 9px 0
+
     a
       color: #4397A5
       font-size: 14px
@@ -1798,10 +1982,12 @@ textarea
       padding: 0 14px
       border: 0.795354px solid #4397A5
         radius: 1.5px
+
       &:hover
         color: #fff
         border-color: #7C99E2
         background: #7C99E2
+
     .active
       color: #fff
       background: #408FAC
@@ -1813,9 +1999,11 @@ textarea
   opacity: .54
   display: flex
   align-items: center
+
   .icon-arrow
     margin: 0 0 0 5px
     transition: .3s ease
+
   &:hover, &:focus
     color: #000
     opacity: 1
@@ -1835,23 +2023,30 @@ textarea
   height: 280px
   display: flex
   flex-direction: column
+
   &:hover
     box-shadow: 0 18px 25px rgba(0, 0, 0, 0.25), -18px 0px 25px rgba(0, 0, 0, 0.25), 18px 0px 25px rgba(0, 0, 0, 0.25)
 
 
 .blog-box__max
   height: 592px
+
   .blog-box__img
     height: 453px
+
   .blog-box__name
     font-size: 24px
     padding: 33px 10px
+
   .blog-box__category
     font-size: 20px
+
   .date
     font-size: 20px
+
   .links-discuss
     font-size: 20px
+
     .icon
       width: 30px
       height: 30px
@@ -1864,6 +2059,7 @@ textarea
   justify-content: center
   overflow: hidden
   height: 215px
+
   img
     width: 100%
     height: 100%
@@ -1873,6 +2069,7 @@ textarea
   font-size: 18px
   color: #000000
   padding: 10px 8px
+
   &:hover
     color: #000
 
@@ -1895,6 +2092,7 @@ textarea
   flex-wrap: wrap
   padding: 5px 10px
   font-size: 14px
+
   .date
     color: #FFFFFF
 
@@ -1909,6 +2107,7 @@ textarea
   align-items: center
   color: #fff
   margin: 0 auto
+
   .icon
     margin: 0 13px 0 0
     width: 13px
@@ -1916,13 +2115,17 @@ textarea
     display: flex
     align-items: center
     justify-content: center
+
     svg
       width: 100%
       height: 100%
+
       path
         transition: .3s ease
+
   &:hover
     color: #000
+
     .icon
       svg
         path
@@ -1935,6 +2138,7 @@ textarea
   border-radius: 6px
   padding: 30px 25px
   height: 592px
+
   h3
     text-transform: uppercase
     text-align: center
@@ -1952,6 +2156,7 @@ textarea
   font-size: 18px
   color: #000000
   padding: 7.5px 0
+
   &:hover
     background: rgba(67, 151, 165, 0.25)
     color: #000000
@@ -1971,16 +2176,20 @@ textarea
   flex-direction: column
   align-items: flex-start
   margin: 0 0 30px
+
   h3
     font-size: 20px
     margin: 0 auto 14px
     text-transform: uppercase
     text-align: center
+
   .form-group
     width: 100%
     margin: 0 0 13px
+
   label
     width: 100%
+
     input
       background: transparent
       width: 100%
@@ -1991,8 +2200,10 @@ textarea
         radius: 0
       padding: 0
       height: auto
+
       &::placeholder
         color: rgba(165, 164, 164, 0.87)
+
       &:hover, &:focus
         background: transparent
         color: rgba(165, 164, 164, 0.87)
@@ -2001,6 +2212,7 @@ textarea
     font-size: 20px
     margin: 0 0 10px
     display: block
+
   button
     width: 100%
     background: transparent
@@ -2018,6 +2230,7 @@ textarea
     size: cover
   position: relative
   padding: 327px 0 40px
+
   &:before
     content: ''
     position: absolute
@@ -2026,14 +2239,17 @@ textarea
     background: linear-gradient(359.57deg, #000000 -26.48%, rgba(0, 0, 0, 0) 53.42%)
     left: 0
     top: 0
+
   h1
     font-size: 48px
     font-family: $default-font
     margin: 40px 0
     font-weight: bold
+
   .date
     color: #fff
     font-size: 24px
+
   .container
     max-width: 1650px
 
@@ -2042,22 +2258,27 @@ textarea
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     a
       font-size: 24px
       color: #fff
+
       &:after
         content: '>'
         margin: 0 10px
+
     span
       font-size: 24px
 
 .blog-content
   padding: 70px 0 60px
+
   .article
     color: #000000
     font-size: 24px
     line-height: 31px
+
   .container
     max-width: 1650px
 
@@ -2070,6 +2291,7 @@ textarea
     letter-spacing: 0.0357143em
     margin: 0 0 30px
     color: #000
+
   .container
     max-width: 1650px
 
@@ -2081,16 +2303,19 @@ textarea
   font-weight: 500
   font-family: 'Roboto', sans-serif
   letter-spacing: 0.0357143em
+
   &:hover
     color: #000
 
 .box-text
   margin: 0 0 50px
+
   &:last-child
     margin: 0
 
 .article-subtitle
   margin: 0 0 25px
+
   &:last-child
     margin: 0
 
@@ -2108,15 +2333,18 @@ textarea
 .article-links
   color: #fff
   font-weight: bold
+
   &:hover
     color: #357C96
 
 .share
   margin: 40px 0 28px
+
   p
     font-size: 24px
     width: 100%
     margin: 0 0 20px
+
     a
       display: inline
 
@@ -2136,6 +2364,7 @@ textarea
   display: flex
   align-items: stretch
   flex-wrap: wrap
+
   li
     a
       display: flex
@@ -2146,6 +2375,7 @@ textarea
       justify-content: center
       font-size: 14px
       color: #fff
+
       .icon
         margin: 0 5px 0 0
 
@@ -2166,13 +2396,17 @@ textarea
   background: url("../img/partner-bg1.jpg") no-repeat center
     size: cover
   color: #fff
+
   h1
     color: #fff
+
     .icon
       background: #D7E5EA
       min-width: 55px
+
   p
     margin: 30px 0 50px 90px
+
   .btn
     margin: 0 0 0 90px
 
@@ -2180,26 +2414,30 @@ textarea
 .opportunities-partners
   padding: 70px 0
   position: relative
+
   &:before
     content: ''
     position: absolute
     right: -100px
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     background: url("../img/decor-bg4.png") no-repeat center
       size: contain
     width: 510px
     height: 600px
+
   h2
     margin: 0 0 60px
     color: #CC6666
     font-size: 34px
     font-weight: normal
+
   h3
     font-size: 26px
     padding: 0 0 20px
     margin: 0 0 15px
     position: relative
+
     &:before
       content: ''
       position: absolute
@@ -2208,6 +2446,7 @@ textarea
       height: 2px
       background: #CC6666
       width: 116px
+
   .text
     font-size: 16px
     margin: 0 0 40px
@@ -2219,8 +2458,10 @@ textarea
   position: relative
   background: url("../img/bg-partner2.jpg") #000 no-repeat center
     size: cover
+
   h2
     margin: 0 0 13px
+
   &:after
     content: ''
     position: absolute
@@ -2230,22 +2471,26 @@ textarea
     top: 0
     left: 0
     opacity: .8
+
   &:before
     width: 905px
     height: 100%
     background: url("../img/decor-bg5.png") no-repeat center
       size: 100%
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     left: -550px
     z-index: 1
     opacity: .52
+
   .text
     p
       padding: 30px 0
+
       &:before
         background: #CC6666
         right: 0
+
       &:after
         content: ''
         position: absolute
@@ -2254,12 +2499,14 @@ textarea
         background: #CC6666
         width: 2000px
         height: 1px
+
   .btn
     margin: 73px 0 0 0
     width: 232px
 
 .pros-box
   margin: 0 0 30px
+
   .icon
     width: 54px
     height: 54px
@@ -2270,19 +2517,23 @@ textarea
     margin: 0 0 22px
     border-radius: 5px
     padding: 10px
+
     img
       max-height: 45px
       height: 100%
+
   h3
     font-size: 26px
     line-height: 1
     margin: 0 0 15px
+
   p
     font-size: 16px
 
 //nekta-function__partners
 .nekta-function__partners
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -2297,6 +2548,7 @@ textarea
 .partners
   position: relative
   padding: 0 0 125px
+
   &:before
     content: ''
     position: absolute
@@ -2306,8 +2558,10 @@ textarea
     height: 902px
     background: url("../img/decor-bg7.png") no-repeat center
       size: contain
+
   h2
     text-align: left
+
   .btn
     margin: 0 auto
 
@@ -2315,10 +2569,13 @@ textarea
 
   li
     margin: 0 5px 0 0
+
     &:first-child
       margin: 0 16px 0 0
+
     &:last-child
       margin: 0 0 0 16px
+
     a
       font-size: 18px
       width: 13px
@@ -2327,6 +2584,7 @@ textarea
       justify-content: center
       color: #4397A5
       text-decoration: underline
+
     .active
       text-decoration: none
 
@@ -2334,6 +2592,7 @@ textarea
   width: 100%
 
   margin: 50px 0 0
+
   .partners-box
     width: 20%
     display: flex
@@ -2354,10 +2613,12 @@ textarea
   display: flex
   align-items: center
   justify-content: flex-end
+
   .slick-arrow
     top: 0
     transform: translate(0)
     position: relative
+
   .slick-next
     order: 1
 
@@ -2370,6 +2631,7 @@ textarea
     align-items: center
     justify-content: center
     width: auto
+
     li
       margin: 0 5px 0 0
       width: auto
@@ -2380,16 +2642,206 @@ textarea
       justify-content: center
       color: #4397A5
       text-decoration: underline
+
       &:last-child
         margin: 0
+
       button
         display: none
+
       &:before
         content: counters(item, ".")
         counter-increment: item
         display: inline-block
+
     .slick-active
       text-decoration: none
+
+//support
+.support
+  padding: 90px 0
+
+  h1
+    margin: 0
+
+.support-about
+  font-size: 28px
+
+.support-about
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
+  justify-content: center
+
+
+.support-img
+  max-width: 612px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: -100px 0 0 auto
+
+.support-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  transition: .3s ease
+  width: 400px
+  height: 100%
+  margin: 0 auto
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24)
+  border-radius: 5px
+  background: #FAFAFA
+  padding: 55px 0 53px
+  cursor: pointer
+  a
+    &:hover
+      color: $accent
+
+  &:hover
+    box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.25), 18px 0px 25px rgba(0, 0, 0, 0.25), -18px 0px 25px rgba(0, 0, 0, 0.25)
+
+.support-box__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 170px
+
+.support-box__name
+  text-align: center
+  color: #000000
+  text-decoration: underline
+  font-size: 28px
+  margin: 40px auto 20px
+  &:hover
+    color: $accent
+    text-decoration: none
+
+.support-box__text
+  color: #9E9E9E
+  font-size: 24px
+
+.support-callback
+  width: 100%
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24)
+  background: #2C3240 url("../img/bg-support.png") no-repeat center
+    size: cover
+  padding: 30px 0
+  h2
+    color: #fff
+    font-size: 48px
+    font-family: 'DidactGothic', sans-serif
+  .btn
+    max-width: 320px
+    margin: 30px auto 0
+    border: none
+    width: 100%
+    height: 51px
+    border-radius: 5px
+    background: #408FAC
+    font-family: 'DidactGothic', sans-serif
+    font-size: 24px
+    &:hover
+      background: $accent
+      color: #fff
+
+//question-last
+.question-last
+  padding: 113px 0 37px
+  h2
+    font-size: 48px
+    font-family: 'DidactGothic', sans-serif
+    text-align: left
+    margin: 0 0 54px
+    color: #000000
+  .links-grey
+    margin: 48px 0 0
+    font-size: 30px
+
+.links-grey
+  color: #B1A7A7
+  &:hover
+    color: $accent
+
+.question-box
+  width: 100%
+  background: #FAFAFA
+  border-bottom: 0.8px solid #A9A7A7
+  padding: 35px 25px 17px 10px
+  color: #000000
+  font-size: 24px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  &:last-child
+    border: none
+
+.question-name
+  color: #408FAC
+  font-size: 24px
+  width: 100%
+  margin: 0 0 20px
+
+.question-box__content
+  width: 100%
+
+
+.question-box__text
+  width: calc(100% - 160px)
+
+.list-statistic
+  display: flex
+  align-items: stretch
+  li
+    margin: 0 18px 0 0
+    width: 54px
+    height: 63px
+    border: 0.5px solid #9E9E9E
+    background: #FAFAFA
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    padding: 13px 8px
+    font-size: 12px
+    &:last-child
+      margin: 0
+
+.links-question
+  margin: 20px 0 0
+  color: #408FAC
+  &:hover
+    color: $accent
+
+.answer
+  width: 100%
+  margin: 20px 0 0
+  display: none
+  p
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+.stars
+  display: flex
+  .star
+    cursor: pointer
+    transition: .3s ease
+    width: 35px
+    height: 33px
+    border: none
+    overflow: hidden
+    margin: 0 6px 0 0
+    background: url('../img/star.svg') no-repeat center
+      size: contain
+    &:last-child
+      margin: 0
+    &.active
+      background: url('../img/star-selected.svg') no-repeat center
+        size: contain
 
 
 
