@@ -2965,7 +2965,7 @@ textarea {
     margin: 0; }
 
 .support-about {
-  font-size: 28px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3059,24 +3059,17 @@ textarea {
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
   background: #2C3240 url("../img/bg-support.png") no-repeat center;
     background-size: cover;
-  padding: 30px 0; }
+  padding: 30px 0 50px; }
   .support-callback h2 {
     color: #fff;
     font-size: 48px;
-    font-family: 'DidactGothic', sans-serif; }
+    font-family: 'DidactGothic', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto; }
   .support-callback .btn {
     max-width: 320px;
     margin: 30px auto 0;
-    border: none;
-    width: 100%;
-    height: 51px;
-    border-radius: 5px;
-    background: #408FAC;
-    font-family: 'DidactGothic', sans-serif;
-    font-size: 24px; }
-    .support-callback .btn:hover {
-      background: #4397A5;
-      color: #fff; }
+    width: 100%; }
 
 .question-last {
   padding: 113px 0 37px; }
@@ -3088,7 +3081,7 @@ textarea {
     color: #000000; }
   .question-last .links-grey {
     margin: 48px 0 0;
-    font-size: 30px; }
+    font-size: 26px; }
 
 .links-grey {
   color: #B1A7A7; }
@@ -3101,7 +3094,7 @@ textarea {
   border-bottom: 0.8px solid #A9A7A7;
   padding: 35px 25px 17px 10px;
   color: #000000;
-  font-size: 24px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3118,9 +3111,9 @@ textarea {
 
 .question-name {
   color: #408FAC;
-  font-size: 24px;
   width: 100%;
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  font-weight: bold; }
 
 .question-box__content {
   width: 100%; }
@@ -3216,15 +3209,15 @@ textarea {
       flex-wrap: wrap;
   margin: 30px 0 0; }
   .pagination li {
-    margin: 0 12px 0 0; }
+    margin: 0 16px 0 0; }
     .pagination li:last-child {
       margin: 0; }
-    .pagination li:first-child a, .pagination li:last-child a {
-      font-size: 68px; }
+    .pagination li:first-child, .pagination li:last-child {
+      width: 13px;
+      height: 22px; }
     .pagination li a {
       color: #408FAC;
-      font-size: 48px;
-      line-height: 63px; }
+      font-size: 18px; }
     .pagination li .active {
       text-decoration: underline; }
 
@@ -3301,8 +3294,6 @@ textarea {
     background-size: cover; }
   .title {
     font-size: 44px; }
-  .equipment-about, .support-about {
-    font-size: 18px; }
   .equipment .container-fluid {
     padding: 0 15px; }
   .for-whom:before {
@@ -3368,10 +3359,6 @@ textarea {
         width: 100%; }
   .support-callback h2 {
     font-size: 34px; }
-  .question-box {
-    font-size: 18px; }
-  .question-name {
-    font-size: 20px; }
   .question-last {
     padding: 40px 0 30px; }
     .question-last h2 {
