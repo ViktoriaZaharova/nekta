@@ -1129,6 +1129,7 @@ input, .form-control
   .checkbox-custom
     position: relative
     width: 22px
+    min-width: 22px
     height: 22px
     display: inline-block
     vertical-align: middle
@@ -1154,8 +1155,8 @@ input, .form-control
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-      width: 22px
-      height: 22px
+      width: calc(100% + 4px)
+      height: calc(100% + 4px)
       background: url("../img/check.svg") no-repeat center
         size: contain
 
@@ -2878,6 +2879,187 @@ textarea
 #modalQuestion
   .modal-dialog
     max-width: 1125px
+
+//contacts page
+.phone-contacts
+  margin: 22px auto 30px
+  text-align: center
+  font-size: 64px
+  color: #000000
+  &:hover
+    color: $accent
+
+.contacts-text
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  flex-wrap: wrap
+  margin: 0 0 70px
+  font-size: 28px
+
+.mail-contacts
+  display: inline
+  margin: 0 0 0 5px
+  color: #408FAC
+  &:hover
+    color: #000
+
+.contacts-box
+  margin: 0 0 70px
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24)
+  background: #FAFAFA
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 33px 20px 37px
+  transition: .3s ease
+  cursor: pointer
+  &:hover
+    box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.25), 18px 0px 25px rgba(0, 0, 0, 0.25), -18px 0px 25px rgba(0, 0, 0, 0.25)
+
+.contacts-box__text
+  color: #9E9E9E
+  font-size: 28px
+  &:hover
+    color: $accent
+
+.contacts-box__name
+  text-decoration: underline
+  font-size: 28px
+  color: #000
+  margin: 40px auto 7px
+  &:hover
+    color: $accent
+
+.contacts-box__icon
+  background: #CF5555
+  width: 130px
+  height: 130px
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+
+.maps-section
+  width: 100%
+  height: 100%
+  iframe
+    width: 100%
+    height: 100%
+
+//contacts-section
+.contacts-section__box
+  padding: 203px 220px 167px 55px
+  background: url("../img/bg-contacts.png") #2C3240 no-repeat center
+    size: cover
+  color: #fff
+  font-size: 24px
+  line-height: 40px
+  .phone
+    font-size: 24px
+    font-family: "DidactGothic", sans-serif
+    color: #fff
+  .mail
+    color: #408FAC
+
+.address-contacts
+  max-width: 390px
+  width: 100%
+
+.list-social-contacts
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 8px 10px 0 0
+    a
+      width: 25px
+      height: 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 5px
+      border: 1px solid #9E9E9E
+        radius: 50%
+      &:hover
+        border-color: #CF5555
+        svg
+          path
+            fill: #CF5555
+
+.section-callback
+  padding: 70px 0
+  position: relative
+  background: url("../img/bg-callback.svg") no-repeat left center
+    size: 942px
+  h2
+    margin: 0 auto 70px
+    color: #000000
+    font-size: 48px
+    font-family: "DidactGothic", sans-serif
+
+.form-callback
+  background: #FAFAFA
+  border-radius: 5px
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24)
+  padding: 65px 30px
+  label
+    width: 100%
+  .form-group__title
+    margin: 0 0 7px
+  input
+    height: 59px
+    color: #9E9E9E
+    padding: 0 28px
+    font-family: "DidactGothic", sans-serif
+    border-radius: 5px
+    font-size: 24px
+    background: #FAFAFA
+    &::placeholder
+      color: #9E9E9E
+  .form-group
+    margin: 0 0 37px
+    &:last-child
+      margin: 0
+  textarea
+    width: 100%
+    background: #FAFAFA
+    font-family: "DidactGothic", sans-serif
+    font-size: 24px
+    border: 1px solid #4397A5
+      radius: 5px
+    padding: 10px
+    height: 230px
+  .checkbox
+    align-items: flex-start
+    .label
+      font-size: 22px
+      line-height: 31px
+    a
+      display: block
+      color: #408FAC
+  .checkbox-custom
+    width: 20px
+    min-width: 20px
+    height: 20px
+  button
+    margin: 36px auto 0
+    height: 59px
+    width: 100%
+    font-size: 24px
+    font-family: "DidactGothic", sans-serif
+
+
+.necessarily
+  font-size: 18px
+
+
+
+
 
 @import "media"
 // Всегда в конце

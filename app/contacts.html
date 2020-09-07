@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nekta</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+          integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header-main">
+
+                <div class="header-top">
+                    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+                    <a href="tel:+78007005573" class="phone">
+                        <span class="icon"><img src="img/phone.svg" alt=""></span>
+                        <span class="text">8 800 700 55 73</span>
+                    </a>
+
+                    <button class="btn btn-call d-flex d-md-none" data-toggle="modal" data-target="#modalCallback">
+                        Оставить заявку
+                    </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="navbar navbar-expand-md">
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Продукты
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <div class="dropdown-menu__logos">
+                                        <a class="dropdown-item logo-item" href="#">
+                                            <span class="img-logo"><img src="img/logo1.jpg" alt=""></span>
+                                            <span class="description-logo">
+                                            Универсальная платформа для GPS/ГЛОНАСС мониторинга и Iot
+                                        </span>
+                                        </a>
+                                        <a class="dropdown-item logo-item" href="#">
+                                            <span class="img-logo"><img src="img/logo2.jpg" alt=""></span>
+                                            <span class="description-logo">
+                                            Бэкенд платформа, разработанная для быстрого подключения любых типоы устройств к телематическим системам
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Оборудование
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Собщество
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Компания
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <a class="dropdown-item" href="#">Наше сообщество</a>
+                                    <a class="dropdown-item" href="#">Библиотека кейсов</a>
+                                    <a class="dropdown-item" href="#">Разработчики ПО</a>
+                                    <a class="dropdown-item" href="#">Техподдержка 24/7</a>
+                                    <a class="dropdown-item" href="#">Обучение и сертификация</a>
+                                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                                    <a class="dropdown-item" href="#">Маркетинг</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Задать вопрос</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Форум</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Личный кабинет</a>
+                            </li>
+                            <li class="nav-item d-none d-md-flex">
+                                <button class="btn btn-call" data-toggle="modal" data-target="#modalCallback">
+                                    Оставить заявку
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="equipment support contacts">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h1 class="title-page">Контактная информация</h1></div>
+            <div class="col-12">
+                <a href="tel:+78007005573" class="phone-contacts">8 (800) 700-55-73</a>
+            </div>
+
+            <div class="col-12">
+                <div class="contacts-text">
+                    <p> ООО “Интернет вещей” • </p>
+                    <a href="mailto:info@nekta.tech"
+                       class="mail-contacts">info@nekta.tech</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="contacts-box">
+                    <div class="contacts-box__icon"><img src="img/contacts-icon1.png" alt=""></div>
+                    <a href="#" class="contacts-box__name">Отдел продаж</a>
+                    <a href="mailto:sales@nekta.tech" class="contacts-box__text">sales@nekta.tech</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="contacts-box">
+                    <div class="contacts-box__icon"><img src="img/contacts-icon2.png" alt=""></div>
+                    <a href="support.html" class="contacts-box__name">Техподдержка</a>
+                    <a href="mailto:support@nekta.tech" class="contacts-box__text">support@nekta.tech</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="contacts-box">
+                    <div class="contacts-box__icon"><img src="img/contacts-icon3.png" alt=""></div>
+                    <a href="#" class="contacts-box__name">Медиацентр</a>
+                    <a href="mailto:marketing@nekta.tech" class="contacts-box__text">marketing@nekta.tech</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="contacts-box">
+                    <div class="contacts-box__icon"><img src="img/contacts-icon4.png" alt=""></div>
+                    <a href="#" class="contacts-box__name">Карьера</a>
+                    <a href="mailto:rabota@nekta.tech" class="contacts-box__text">rabota@nekta.tech</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contacts-section">
+    <div class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 col-md-6 p-0">
+                <div class="contacts-section__box">
+                    <div class="address-contacts">
+                        <p>Головной офис NEKTA</p>
+                        <p>Россия, Самарская обл., г. Тольятти
+                            Ул. Юбилейная, 29, оф. 202</p>
+                    </div>
+
+                    <a href="tel:+78482903020" class="phone">Тел. +7 8482 90 30 20</a>
+                    <a href="mailto:info@nekta.tech" class="mail">info@nekta.tech</a>
+
+                    <ul class="list-social-contacts">
+                        <li><a href="#">
+                            <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.74231 16.0466V8.72693H8.19924L8.56707 5.87434H5.74231V4.05305C5.74231 3.22717 5.97168 2.66429 7.15609 2.66429L8.66665 2.6636V0.112281C8.40528 0.0776436 7.50866 0 6.46551 0C4.28762 0 2.79659 1.32932 2.79659 3.77068V5.87442H0.333313V8.72701H2.79651V16.0467L5.74231 16.0466Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M14.6558 0.936501C14.7602 0.588842 14.6558 0.333313 14.1596 0.333313H12.5185C12.1013 0.333313 11.909 0.554028 11.8047 0.797484C11.8047 0.797484 10.9701 2.83151 9.78791 4.15276C9.40544 4.53523 9.23161 4.65678 9.02297 4.65678C8.91864 4.65678 8.76767 4.53523 8.76767 4.18757V0.936501C8.76767 0.519216 8.64659 0.333313 8.29881 0.333313H5.72009C5.4594 0.333313 5.30257 0.526952 5.30257 0.710511C5.30257 1.10611 5.89356 1.1973 5.95451 2.30991V4.72653C5.95451 5.25634 5.85887 5.35245 5.65023 5.35245C5.09392 5.35245 3.74079 3.30916 2.93811 0.971313C2.78081 0.516872 2.62303 0.333313 2.20364 0.333313H0.562631C0.0937718 0.333313 0 0.554028 0 0.797484C0 1.23212 0.556419 3.38793 2.59045 6.23907C3.94662 8.186 5.85699 9.24164 7.59552 9.24164C8.63874 9.24164 8.76767 9.00721 8.76767 8.6034V7.13177C8.76767 6.66291 8.86648 6.56938 9.19668 6.56938C9.44025 6.56938 9.85742 6.69105 10.8311 7.62982C11.9437 8.74231 12.1271 9.24164 12.753 9.24164H14.394C14.8628 9.24164 15.0973 9.00721 14.962 8.54456C14.8141 8.08344 14.2829 7.41461 13.5779 6.62154C13.1955 6.16944 12.6217 5.68265 12.448 5.43931C12.2045 5.12634 12.274 4.98733 12.448 4.70929C12.448 4.70929 14.4472 1.89286 14.6558 0.936618V0.936501Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0446 3.04C13.0446 3.16726 13.0446 3.29451 13.0446 3.40358C13.0446 7.16667 10.1723 11.5115 4.93672 11.5115C3.31878 11.5115 1.82808 11.0388 0.555542 10.239C0.773692 10.2571 1.01002 10.2753 1.22817 10.2753C2.55525 10.2753 3.79143 9.82083 4.77311 9.05731C3.51875 9.03913 2.46436 8.20289 2.11895 7.07578C2.30074 7.11214 2.46435 7.13031 2.66433 7.13031C2.91883 7.13031 3.17334 7.09396 3.40967 7.02124C2.10077 6.76673 1.1191 5.62144 1.1191 4.23983C1.1191 4.22165 1.1191 4.22165 1.1191 4.20347C1.50086 4.42162 1.93716 4.54887 2.40982 4.56705C1.64629 4.05803 1.13728 3.18543 1.13728 2.18558C1.13728 1.65838 1.28271 1.16755 1.51904 0.749425C2.91883 2.47645 5.02762 3.60356 7.39091 3.73081C7.33637 3.53084 7.31819 3.29451 7.31819 3.07636C7.31819 1.49477 8.59074 0.222229 10.1723 0.222229C10.9904 0.222229 11.7357 0.567633 12.2448 1.11301C12.8992 0.985754 13.4991 0.749425 14.0627 0.4222C13.8445 1.09483 13.39 1.6402 12.8083 2.00379C13.39 1.93107 13.9354 1.78564 14.4444 1.54931C14.0808 2.13104 13.6082 2.64006 13.0446 3.04Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.0006 7.5003C5.0006 6.11959 6.11959 5 7.5003 5C8.88102 5 10.0006 6.11959 10.0006 7.5003C10.0006 8.88102 8.88102 10.0006 7.5003 10.0006C6.11959 10.0006 5.0006 8.88102 5.0006 7.5003ZM3.64899 7.5003C3.64899 9.62739 5.37322 11.3516 7.5003 11.3516C9.62739 11.3516 11.3516 9.62739 11.3516 7.5003C11.3516 5.37322 9.62739 3.64899 7.5003 3.64899C5.37322 3.64899 3.64899 5.37322 3.64899 7.5003ZM10.604 3.49628C10.604 3.67429 10.6567 3.84832 10.7555 3.99637C10.8544 4.14442 10.9949 4.25984 11.1593 4.32803C11.3238 4.39621 11.5047 4.41411 11.6793 4.37945C11.8539 4.34479 12.0143 4.25914 12.1402 4.13332C12.2662 4.00749 12.352 3.84716 12.3868 3.67258C12.4215 3.49801 12.4038 3.31703 12.3357 3.15254C12.2677 2.98806 12.1524 2.84744 12.0044 2.74849C11.8564 2.64953 11.6825 2.59668 11.5044 2.5966H11.5041C11.2655 2.59672 11.0367 2.69153 10.8679 2.86021C10.6992 3.0289 10.6043 3.25767 10.604 3.49628ZM4.47018 13.6054C3.73893 13.5721 3.34147 13.4503 3.07734 13.3474C2.72717 13.211 2.47732 13.0487 2.21463 12.7863C1.95194 12.524 1.78933 12.2744 1.65361 11.9242C1.55064 11.6602 1.42884 11.2626 1.3956 10.5314C1.35923 9.74079 1.35197 9.5033 1.35197 7.50036C1.35197 5.49742 1.35983 5.26059 1.3956 4.46934C1.4289 3.73809 1.5516 3.34129 1.65361 3.0765C1.78993 2.72633 1.9523 2.47648 2.21463 2.21379C2.47696 1.9511 2.72657 1.78849 3.07734 1.65277C3.34135 1.5498 3.73893 1.428 4.47018 1.39476C5.26077 1.35839 5.49826 1.35113 7.5003 1.35113C9.50234 1.35113 9.74007 1.35899 10.5313 1.39476C11.2626 1.42806 11.6594 1.55076 11.9242 1.65277C12.2743 1.78849 12.5242 1.95146 12.7869 2.21379C13.0496 2.47612 13.2116 2.72633 13.3479 3.0765C13.4509 3.34051 13.5727 3.73809 13.6059 4.46934C13.6423 5.26059 13.6495 5.49742 13.6495 7.50036C13.6495 9.5033 13.6423 9.74013 13.6059 10.5314C13.5726 11.2626 13.4502 11.6601 13.3479 11.9242C13.2116 12.2744 13.0492 12.5242 12.7869 12.7863C12.5245 13.0484 12.2743 13.211 11.9242 13.3474C11.6601 13.4503 11.2626 13.5721 10.5313 13.6054C9.74073 13.6417 9.50324 13.649 7.5003 13.649C5.49736 13.649 5.26053 13.6417 4.47018 13.6054ZM4.40808 0.0454218C3.60962 0.0817833 3.06402 0.208388 2.58754 0.393796C2.09408 0.585263 1.67635 0.842134 1.25891 1.25891C0.841474 1.67569 0.585263 2.09408 0.393796 2.58754C0.208388 3.06432 0.0817833 3.60963 0.0454218 4.40808C0.00846034 5.20779 0 5.46346 0 7.5003C0 9.53714 0.00846034 9.79281 0.0454218 10.5925C0.0817833 11.391 0.208388 11.9363 0.393796 12.4131C0.585263 12.9062 0.841534 13.3251 1.25891 13.7417C1.67629 14.1583 2.09408 14.4148 2.58754 14.6068C3.06492 14.7922 3.60962 14.9188 4.40808 14.9552C5.20821 14.9915 5.46346 15.0006 7.5003 15.0006C9.53714 15.0006 9.79281 14.9921 10.5925 14.9552C11.391 14.9188 11.9363 14.7922 12.4131 14.6068C12.9062 14.4148 13.3243 14.1585 13.7417 13.7417C14.1591 13.3249 14.4148 12.9062 14.6068 12.4131C14.7922 11.9363 14.9194 11.391 14.9552 10.5925C14.9915 9.79221 15 9.53714 15 7.5003C15 5.46346 14.9915 5.20779 14.9552 4.40808C14.9188 3.60957 14.7922 3.06402 14.6068 2.58754C14.4148 2.09438 14.1585 1.67635 13.7417 1.25891C13.3249 0.841474 12.9062 0.585263 12.4137 0.393796C11.9363 0.208388 11.391 0.0811833 10.5931 0.0454218C9.79341 0.00906037 9.53774 0 7.5009 0C5.46406 0 5.20821 0.00846034 4.40808 0.0454218Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.9342 1.07523C13.5291 1.23539 13.9982 1.70446 14.1584 2.29936C14.4558 3.38622 14.4444 5.65145 14.4444 5.65145C14.4444 5.65145 14.4444 7.90524 14.1584 8.99209C13.9982 9.587 13.5291 10.0561 12.9342 10.2162C11.8474 10.5022 7.49996 10.5022 7.49996 10.5022C7.49996 10.5022 3.16399 10.5022 2.06569 10.2048C1.47079 10.0446 1.00172 9.57556 0.841556 8.98065C0.555542 7.90524 0.555542 5.64001 0.555542 5.64001C0.555542 5.64001 0.555542 3.38622 0.841556 2.29936C1.00172 1.70446 1.48223 1.22395 2.06569 1.06378C3.15255 0.777771 7.49996 0.777771 7.49996 0.777771C7.49996 0.777771 11.8474 0.777771 12.9342 1.07523ZM9.73089 5.64004L6.11567 7.72222V3.55786L9.73089 5.64004Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.0987 12.5551C11.9308 12.9192 12.2428 12.1564 12.2428 12.1564L14.4444 1.09643C14.4271 0.351008 13.4216 0.801728 13.4216 0.801728L1.09619 5.6383C1.09619 5.6383 0.506786 5.84632 0.558792 6.21037C0.610798 6.57441 1.07885 6.74776 1.07885 6.74776L4.18189 7.78789C4.18189 7.78789 5.118 10.8562 5.30869 11.4457C5.48204 12.0177 5.63806 12.0351 5.63806 12.0351C5.81141 12.1044 5.96743 11.983 5.96743 11.983L7.97833 10.1628L11.0987 12.5551ZM11.6361 3.05529C11.6361 3.05529 12.0695 2.79526 12.0522 3.05529C12.0522 3.05529 12.1215 3.08996 11.8962 3.33265C11.6881 3.54068 6.78223 7.94386 6.12349 8.53327C6.07148 8.56794 6.03681 8.61994 6.03681 8.68929L5.84612 10.3188C5.81145 10.4922 5.58609 10.5095 5.53408 10.3535L4.71932 7.68383C4.68465 7.57982 4.71932 7.45847 4.82333 7.38913L11.6361 3.05529Z"
+                                      fill="#9E9E9E"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 p-0">
+                <div class="maps-section">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCQxmZub~A"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section-callback">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Свяжитесь с нами</h2>
+            </div>
+
+            <div class="col-12">
+                <form method="post" class="form-callback">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <div class="form-group__title">Имя *</div>
+                                <label>
+                                    <input type="text" class="form-control" name="name" placeholder="Введите ваше имя" required>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group__title">E-mail *</div>
+                                <label>
+                                    <input type="text" class="form-control" name="mail"
+                                           placeholder="Введите ваш e-mail" required>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group__title">Телефон</div>
+                                <label>
+                                    <input type="text" class="form-control" name="phone"
+                                           placeholder="Введите ваш телефон">
+                                </label>
+                            </div>
+
+                            <div class="necessarily d-none d-md-block">* - поля обязательные для заполнения</div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <div class="form-group__title">Сообщение *</div>
+                                <label>
+                                    <textarea name="message" required></textarea>
+                                </label>
+                            </div>
+
+                            <div class="necessarily d-block-none d-md-none">* - поля обязательные для заполнения</div>
+
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Я согласен на обработку персональных данных <a href="#">Политика конфиденциальности</a></span>
+                            </label>
+
+                            <button type="submit" class="btn btn-red">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-sm-5">
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.34 23.07">
+                        <g data-name="Слой 2">
+                            <g data-name="Layer 1">
+                                <path class="cls-1"
+                                      d="M.59,23.07A.6.6,0,0,1,0,22.48V.6A.6.6,0,0,1,.59,0a.6.6,0,0,1,.6.6V22.48A.6.6,0,0,1,.59,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M22.47,23.07a.59.59,0,0,1-.59-.59V.6a.59.59,0,0,1,.59-.6.6.6,0,0,1,.6.6V22.48A.6.6,0,0,1,22.47,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M44.35,23.07a.6.6,0,0,1-.6-.59V.6A.6.6,0,0,1,45,.6V22.48A.6.6,0,0,1,44.35,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M88.11,23.07a.6.6,0,0,1-.6-.59V.6A.6.6,0,1,1,88.7.6V22.48A.6.6,0,0,1,88.11,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M166.86,23.07a.59.59,0,0,1-.59-.59v-11a.59.59,0,0,1,.59-.59.6.6,0,0,1,.6.59v11A.6.6,0,0,1,166.86,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M188.74,23.07a.59.59,0,0,1-.59-.59v-11a.59.59,0,0,1,.59-.59.6.6,0,0,1,.6.59v11A.6.6,0,0,1,188.74,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M22.47,23.07a.59.59,0,0,1-.42-.18L5.64,6.49a.6.6,0,1,1,.85-.84L22.9,22.05a.6.6,0,0,1-.43,1Z"/>
+                                <path class="cls-1"
+                                      d="M66.23,1.19H44.35a.59.59,0,0,1-.6-.59.6.6,0,0,1,.6-.6H66.23a.59.59,0,0,1,.59.6A.58.58,0,0,1,66.23,1.19Z"/>
+                                <path class="cls-1" d="M66.23,23.07H44.35a.6.6,0,1,1,0-1.19H66.23a.6.6,0,0,1,0,1.19Z"/>
+                                <path class="cls-1" d="M55.29,12.13H44.35a.6.6,0,1,1,0-1.19H55.29a.6.6,0,1,1,0,1.19Z"/>
+                                <path class="cls-1"
+                                      d="M99.24,11.93a.58.58,0,0,1-.42-.17.61.61,0,0,1,0-.85L109.56.17a.6.6,0,0,1,.84.85L99.66,11.76A.55.55,0,0,1,99.24,11.93Z"/>
+                                <path class="cls-1"
+                                      d="M110.18,22.87a.63.63,0,0,1-.42-.17L98.82,11.76a.61.61,0,0,1,0-.85.6.6,0,0,1,.84,0L110.6,21.85a.6.6,0,0,1-.42,1Z"/>
+                                <path class="cls-1"
+                                      d="M150.16,1.19H128.28a.58.58,0,0,1-.59-.59.59.59,0,0,1,.59-.6h21.88a.6.6,0,0,1,.6.6A.59.59,0,0,1,150.16,1.19Z"/>
+                                <path class="cls-1"
+                                      d="M139.22,23.07a.6.6,0,0,1-.6-.59V.6a.6.6,0,1,1,1.2,0V22.48A.6.6,0,0,1,139.22,23.07Z"/>
+                                <path class="cls-1"
+                                      d="M188.74,12.13a.59.59,0,0,1-.59-.6,10.35,10.35,0,0,0-20.69,0,.6.6,0,0,1-.6.6.59.59,0,0,1-.59-.6,11.54,11.54,0,0,1,23.07,0A.6.6,0,0,1,188.74,12.13Z"/>
+                                <path class="cls-1" d="M188.74,13.87H177.8a.6.6,0,0,1,0-1.19h10.94a.6.6,0,1,1,0,1.19Z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="mailto:info@nekta.tech" class="mail">info@nekta.tech</a>
+                <p class="copyright">Copyright © 2002-2020</p>
+            </div>
+            <div class="col-12 col-xl-4 col-sm-7">
+                <h4>Мы в социальных сетях</h4>
+                <div class="list-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-5">
+                <h4>Следите за обновлениями</h4>
+
+                <form method="post" class="form form-subscribe">
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Введите имя*" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Email*" required></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="click-scroll__top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.82 4.63">
+        <g>
+            <g>
+                <polygon
+                        points="3.92 4.63 7.82 0.73 7.29 0.2 4.29 3.2 4.29 3.2 3.91 3.53 3.54 3.16 0.55 0 0 0.52 3.92 4.63 3.92 4.1 3.92 4.63"/>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Заявка на интеграцию</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Имя</div>
+                        <label>
+                            <input type="text" class="form-control" name="name" placeholder="Имя">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" placeholder="E-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Оборудование на интеграцию</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl"></textarea>
+                        </label>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-white" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalReviews" tabindex="-1" role="dialog" aria-labelledby="exampleModalReviews"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalReviews">Отзыв</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Имя</div>
+                        <label>
+                            <input type="text" class="form-control" name="name" required placeholder="Имя">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" required placeholder="E-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Пожалуйста, оцените работу техподдержки</div>
+                        <div class="stars">
+                            <div class="star active"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Отзыв</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Оставьте свой отзыв"></textarea>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-red" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalMail" tabindex="-1" role="dialog" aria-labelledby="exampleModalMail"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalMail">Напишите нам</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form form-call form-modal">
+                    <div class="form-group">
+                        <div class="form-group__title">Предложение, замечание, просьба или вопрос.</div>
+                        <label>
+                            <textarea name="message"
+                                      placeholder="Напишите нам"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group__title">Электронная почта</div>
+                        <label>
+                            <input type="text" class="form-control" name="mail" required placeholder="E-mail">
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-accent">Отправить</button>
+                <button type="button" class="btn btn-red" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
