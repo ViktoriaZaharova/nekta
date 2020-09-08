@@ -2881,6 +2881,10 @@ textarea
     max-width: 1125px
 
 //contacts page
+.contacts
+  .container
+    max-width: 1320px
+
 .phone-contacts
   margin: 22px auto 30px
   text-align: center
@@ -2945,17 +2949,34 @@ textarea
   border-radius: 5px
 
 .maps-section
-  width: 100%
+  width: 50%
   height: 100%
+  position: absolute
+  right: 0
+  top: 0
   iframe
     width: 100%
     height: 100%
 
 //contacts-section
+.contacts-section
+
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+    height: 100%
+    background: url("../img/bg-contacts.png") #2C3240 no-repeat center
+      size: cover
+  .container
+    max-width: 1320px
+
 .contacts-section__box
-  padding: 203px 220px 167px 55px
-  background: url("../img/bg-contacts.png") #2C3240 no-repeat center
-    size: cover
+  padding: 203px 0 167px
+
   color: #fff
   font-size: 24px
   line-height: 40px
@@ -2996,6 +3017,8 @@ textarea
   position: relative
   background: url("../img/bg-callback.svg") no-repeat left center
     size: 942px
+  .container
+    max-width: 1320px
   h2
     margin: 0 auto 70px
     color: #000000
