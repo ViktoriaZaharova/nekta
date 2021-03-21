@@ -15,6 +15,10 @@
     padding: 12px
     width: 150px
 
+  .history-col:after
+    width: 100px
+    right: -100px
+
 @media only screen and (max-width : 1440px)
   .card-line
     font-size: 14px
@@ -68,6 +72,12 @@
   .contacts-box
     margin: 0 0 30px
 
+  .nav-link
+    font-size: 16px
+
+  .navbar .navbar-nav .nav-link
+    padding: 16px 10px
+
 @media only screen and (max-width : 1199px)
   .product-box__it
     margin: 0 auto 30px
@@ -94,11 +104,6 @@
       label
         width: 100%
 
-  footer
-    &:before
-      height: 100%
-      -webkit-background-size: cover
-      background-size: cover
 
   .title
     font-size: 44px
@@ -211,6 +216,15 @@
     .phone
       font-size: 18px
 
+  .acquaintance-slider__nav
+    margin: 80px 0 0
+
+  .acquaintance-box
+    height: 500px
+
+  .main-about
+    padding: 120px 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
   .nav-item-logo
@@ -257,9 +271,6 @@
     padding: 0 0 0 30px
     width: calc(100% - 250px)
     max-width: none
-
-  footer .logo
-    max-width: 200px
 
   .filter-wrapper
     max-width: none
@@ -373,7 +384,28 @@
       font-size: 30px
       margin: 0 auto 30px
 
+  .form-col
+    max-width: 49%
 
+  .callback-about .form .form-group
+    max-width: none
+
+  .history
+    padding: 60px 0 0
+    h2
+      margin: 0 0 40px
+
+  .history-box
+    margin: 0 0 60px
+    h3
+      margin: 10px 0 20px
+      font-size: 18px
+
+  .history-box__circle
+    margin: 0 0 20px
+
+  .history-date
+    font-size: 30px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -639,10 +671,111 @@
   .contacts-section:before
     width: 100%
 
+  .form-col
+    max-width: none
+
+  .callback-about .form button
+    max-width: none
+    margin: 0 auto 20px
+
+  .history-col:nth-last-child(2)
+    order: 0
+
+  .history-col
+    &:after
+      display: inline-block
+
+  .acquaintance-box
+    height: auto
+
+  .acquaintance-slider
+    min-width: auto
+    width: 100%
+
+  .acquaintance-content
+    padding: 40px 0
+
+  .acquaintance-slider__nav
+    margin: 30px 0 0
+
+  .acquaintance .text, .subtitle
+    font-size: 20px
+
+  .opportunities-partners
+    padding: 40px 0 20px
+
+  .subtitle
+    margin: 0 0 30px
+
+  .main-about
+    padding: 80px 0
+
+  .dropdown-lang
+    border: 1px solid #4397A5
+    padding: 5px 12px
+    font-size: 14px
+    &:hover
+      border: 1px solid #4397A5
+      .dropdown-menu
+        display: none
+      .dropdown-toggle
+        &:after
+          transform: rotate(90deg)
+
+  .dropdown-toggle::after
+    margin: 0 0 0 10px
+
+  .dropdown-lang .dropdown-item
+    padding: 2px
+    font-size: 14px
+
+  .dropdown-lang.show
+    .dropdown-menu
+      display: block
+
+  .form-select
+    padding: 10px
+
+  .g-select-multiple
+    width: 100%
+    margin: 0 0 10px
+    font-size: 16px
+
+  .journal-img
+    max-width: 150px
+    margin: 20px auto 0
+
+  .subscribe-section
+    .form-subscribe
+      margin: 30px 0
+      .form-group
+        width: 100%
+        margin: 0 auto 10px
+      button
+        width: 100%
+
 @media only screen and (max-width : 600px)
   .card-block
     width: 250px
     height: 250px
+
+  .history-col:after
+    right: 10px
+
+  .history-col
+    &:before
+      width: calc(100% - 50px)
+    &:last-child
+      &:before
+        width: calc(100% - 50px)
+        right: auto
+        left: -50px
+
+  .header-main .btn-call
+    width: 150px
+
+  .g-select-multiple__selection
+    font-size: 14px
 
 @media only screen and (max-width : 575px)
   main
@@ -859,6 +992,29 @@
   .contacts-text
     font-size: 18px
 
+
+  .main-about .btn
+    margin: 30px auto 0
+
+  .dropdown-lang
+    margin: 0 10px 0 0
+
+  .case-box__img
+    height: auto
+    min-height: 200px
+
+  .info-box h3
+    font-size: 20px
+
+  .top-news__item
+    font-size: 16px
+
+  .callback-about
+    margin: 40px 0
+
+  .case-catalog
+    padding: 40px 0 20px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px)
   .form-search label input
@@ -932,6 +1088,8 @@
   .blog .form-search button img
     width: 25px
 
+  .case-catalog
+    padding: 40px 0 0
 
 @media only screen and (max-width : 370px)
   .logo-mobile
@@ -973,7 +1131,7 @@
     margin: 20px auto 0
 
   .phone
-    font-size: 16px
+    font-size: 14px
     .icon
       width: 14px
       height: 14px
@@ -995,3 +1153,15 @@
 
   .blog-box__category
     margin: 0 10px 0 0
+
+  .dropdown-lang
+    font-size: 12px
+    padding: 2px 7px
+    .nav-link
+      font-size: 12px
+
+  .g-select-multiple__selection
+    font-size: 12px
+
+  .g-select-multiple__dropdown
+    font-size: 14px

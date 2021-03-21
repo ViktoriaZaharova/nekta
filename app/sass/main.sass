@@ -263,7 +263,7 @@ h2
 
 nav.navbar .dropdown:hover
   .dropdown-toggle::after
-    transform: rotate(180deg)
+    transform: rotate(-90deg)
 
   > .dropdown-menu
     display: flex
@@ -281,7 +281,7 @@ nav.navbar .dropdown:hover
     justify-content: space-between
 
     .nav-link
-      padding: 20px 0
+      padding: 22px 19px
 
 .nav-link
   display: flex
@@ -289,12 +289,12 @@ nav.navbar .dropdown:hover
   justify-content: center
   color: #1B1A1F
   text-align: center
-  font-size: 16px
+  font-size: 18px
   width: 100%
   height: 100%
   font-family: 'Roboto', sans-serif
   position: relative
-
+  padding: 0
   &:before
     content: ''
     position: absolute
@@ -313,7 +313,7 @@ nav.navbar .dropdown:hover
 
 
 .nav-item
-  flex: 1
+  flex: auto
   display: flex
   align-items: center
   justify-content: center
@@ -336,18 +336,20 @@ nav.navbar .dropdown:hover
       margin: 0 0 15px
 
 .dropdown-toggle::after
-  width: 7px
-  height: 5px
-  background: url("../img/arrow-bottom.svg") no-repeat center
-    size: contain
+  font-size: 18px
+  content: '>'
+  //background: url("../img/arrow-bottom.svg") no-repeat center
+  //  size: contain
   border: none
+  transform: rotate(90deg)
   transition: .3s ease
+  margin: 0 0 0 auto
 
 .nav-item-logo
   flex: 1.5
 
 .logo
-  max-width: 190px
+  max-width: 256px
   width: 100%
   margin: 0 auto
 
@@ -355,11 +357,13 @@ nav.navbar .dropdown:hover
   background: #fff
   border: none
     radius: 0
-  box-shadow: 0 18px 10px rgba(#1D1D1B, .15)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   padding: 40px 30px
   justify-content: space-between
   align-items: center
   flex-wrap: wrap
+  min-width: auto
+  margin: 0
 
 .dropdown-item
   padding: 0
@@ -400,8 +404,8 @@ nav.navbar .dropdown:hover
 //header
 header
   border-bottom: 1px solid $accent
-  box-shadow: 0 18px 19px rgba(29, 29, 27, 0.15)
-
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25)
+  margin: 0 0 13px
   .btn-call
     width: 100%
     height: 100%
@@ -410,9 +414,12 @@ header
 
 .header-main
   padding: 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
 
 .header-top
-  padding: 14px 45px 8px
+  padding: 0 0 0 13px
   display: flex
   align-items: center
   justify-content: space-between
@@ -427,7 +434,7 @@ header
   color: #000000
   font-size: 24px
   font-family: 'Roboto', sans-serif
-
+  margin: 0 17px 0 auto
   .icon
     width: 18px
     height: 18px
@@ -975,31 +982,32 @@ footer
   color: #fff
   position: relative
   overflow: hidden
-
+  .container
+    max-width: 1330px
   &:before
     content: ''
     position: absolute
-    right: -480px
+    right: 0
     bottom: 0
-    background: url("../img/bg5.png") no-repeat center
+    background: url("../img/footer-bg.svg") no-repeat center
       size: contain
-    width: 1043px
-    height: 222px
+    width: 741px
+    height: 448px
 
   .logo
     margin: 0
-
+    max-width: 160px
     svg
       fill: #fff
 
   .mail
-    color: $link
-    margin: 20px 0 10px
+    color: $accent
+    margin: 10px 0 5px
 
   h4
     font-weight: bold
-    margin: 0 0 15px
-    font-size: 18px
+    margin: 0 0 20px
+    font-size: 16px
 
 .list-social
   display: flex
@@ -1010,19 +1018,19 @@ footer
     display: flex
     align-items: center
     justify-content: center
-    width: 35px
-    height: 35px
+    width: 40px
+    height: 40px
     border-radius: 50%
     background: grey
     margin: 0 5px 0 0
-    font-size: 16px
+    font-size: 20px
     color: #fff
 
     &:last-child
       margin: 0
 
     &:hover
-      background: $btn2
+      background: #CF5555
 
 .copyright
   font-size: 14px
@@ -1072,18 +1080,41 @@ input, .form-control
   width: 100%
   display: flex
   align-items: center
-  justify-content: space-between
+  justify-content: flex-start
   flex-wrap: wrap
 
   button
-    width: 135px
-
+    width: 174px
+    height: 40px
+    font-size: 15px
   .form-group
-    width: 150px
-    margin: 0
+    width: 174px
+    margin: 0 6px 0 0
 
     input
       border: none
+      height: 40px
+
+.footer-box
+  margin: 0 0 35px
+  h4
+    font-size: 15px
+
+.links-order
+  margin: 12px 0 0
+  &:hover
+    color: #fff
+
+.footer-menu
+  font-size: 15px
+  li
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+    a
+      color: #FFFFFF
+      &:hover
+        color: $accent
 
 //equipment
 .equipment
@@ -1271,6 +1302,7 @@ input, .form-control
       display: flex
       align-items: center
       justify-content: center
+      margin: 0
 
       &:before
         display: none
@@ -1854,6 +1886,7 @@ textarea
 .blog
   padding: 70px 0 40px
   position: relative
+  overflow: hidden
 
   &:before, &:after
     content: ''
@@ -3081,9 +3114,734 @@ textarea
 .necessarily
   font-size: 18px
 
+//new pages about
+.dropdown-lang
+  flex: none
+  width: auto
+  margin: 0
+  border: 1px solid #4397A5
+    right: none
+    bottom: 1px solid transparent
+  padding: 18px 26px
+  .nav-link
+    padding: 0
+    &:before
+      display: none
+  .dropdown-toggle
+    &:after
+      margin: 0 0 0 5px
+  .dropdown-menu
+    padding: 12px 0
+    width: 100%
+
+  .dropdown-item
+    width: 100%
+    font-size: 18px
+    margin: 0
+    padding: 5px 5px
+  &:hover
+    border: 1px solid #4397A5
+      bottom: 1px solid #4397A5
+      right: none
+    > .dropdown-menu
+      display: flex
+      align-items: center
+      margin: 1px 0 0
+    .dropdown-toggle
+      &:after
+        transform: rotate(-90deg)
+
+.main-about
+  background: linear-gradient(to right, rgba(44,50,64,1) 0%,rgba(44,50,64,1) 40%,rgba(44,50,64,0.8) 70%,rgba(44,50,64,0) 100%), url("../img/bg-about1.jpg") no-repeat right top
+    size: cover
+  padding: 190px 0 140px
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    opacity: .15
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    height: 692px
+    width: 377px
+    background: url("../img/bg-about-decor1.svg") no-repeat left center
+      size: contain
+  .btn
+    margin: 87px 0 0
+
+.who-we
+  h2
+    margin: 0 0 19px
+  &:before
+    height: 100%
+    right: 0
+    width: 671px
+    background: url("../img/bg-who-decor1.svg") no-repeat center
+      size: contain
+    top: auto
+    transform: none
+    bottom: 0
+  .opportunities-partners .text
+    margin: 0 0 70px
+
+.subtitle
+  margin: 0 0 62px
+  font-size: 24px
+
+.acquaintance
+  color: #fff
+  background: #2C3240
+  .text
+    font-size: 24px
+    max-width: 456px
+  h2
+    color: #fff
+    text-align: left
+    max-width: 205px
+    width: 100%
+    padding: 0 0 27px
+    margin: 0 0 30px
+    border-bottom: 1px solid #CC6666
+
+.acquaintance-slider
+  min-width: 883px
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    opacity: .16
+    background: #2C3240
+    z-index: 1
+
+.acquaintance-content
+  padding: 84px 0 65px
+
+.acquaintance-slider__nav
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 325px 0 0
+  .slick-arrow
+    background: transparent
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    transform: none
+    width: 23px
+    height: 27px
+    fill: none
+    stroke: #fff
+    svg
+      display: inline-block
+    &:hover
+      fill: #fff
+  .slick-next
+    margin: 2px 0 0 19px
+
+
+.counter-slide
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  order: 1
+  margin: 0 0 0 31px
+
+.acquaintance-box
+  height: 698px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.our-values
+  background: url("../img/values-bg.jpg") #000 no-repeat center
+    size: cover
+  &:after
+    background: #2b4961
+
+.form-group-message
+  height: 128px
+
+.callback-about
+  textarea
+    border: none
+    height: 128px
+    text-align: center
+    border-radius: 5px
+    padding: 30px 20px
+    color: #606060
+    &::placeholder
+      color: rgba(#606060, .5)
+  .form
+    position: relative
+    z-index: 1
+    align-items: flex-start
+    .form-group
+      max-width: none
+      width: 100%
+      input
+        &::placeholder
+          color: rgba(#606060, .5)
+    button
+      max-width: 370px
+      width: 100%
+      margin: 0
+    .necessarily
+      text-align: center
+      font-size: 12.5px
+    .checkbox
+      margin: 20px 0 0
+      font-size: 12.5px
+      color: #2C3240
+      align-items: flex-start
+      .label
+        font-size: 12.5px
+      .checkbox-custom
+        background: transparent
+        border: 1px solid #2C3240
+        width: 20px
+        height: 20px
+        min-width: 20px
+      a
+        color: #2C3240
+        text-decoration: underline
+  .callback-content
+    position: relative
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      width: 545px
+      height: 672px
+      background: url("../img/callback-bg.svg") no-repeat center
+        size: contain
+      right: -165px
+      bottom: -217px
+      opacity: .44
+
+.form-col
+  max-width: 370px
+  width: 100%
+
+.history
+  position: relative
+  overflow: hidden
+  padding: 192px 0 0
+  h2
+    text-align: left
+    color: #3777CC
+    margin: 0 0 80px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 945px
+    height: 1039px
+    background: url("../img/history-bg.svg") no-repeat center
+      size: cover
+
+.history-box
+  color: #1B1A1F
+  font-size: 16px
+  margin: 0 0 130px
+  h3
+    margin: 30px 0 17px
+    font-size: 26px
+    color: #3777CC
+  .text
+    max-width: 382px
+
+.history-date
+  font-size: 41px
+  color: #3777CC
+  font-family: $clinica
+
+.history-box__circle
+  margin: 0 0 46px
+  width: 24px
+  height: 24px
+  border: 2px solid #3777CC
+    radius: 50%
+  position: relative
+  background: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    background: #3777CC
+    width: 17px
+    height: 17px
+
+.history-col
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: calc(100% + 50px)
+    height: 2px
+    left: -50px
+    top: 12px
+    background: #3777CC
+  &:after
+    content: ''
+    position: absolute
+    height: calc(100% + 2px)
+    width: 189px
+    border: 2px solid #3777CC
+      left: none
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0
+    top: 12px
+    right: -189px
+    clip-path: inset(0 round 100% 100% 0 0/0% 0% 0 0)
+    display: none
+  &:nth-child(even)
+    &:after
+      display: inline-block
+  &:nth-last-child(2)
+    order: 1
+
+  &:last-child
+    &:before
+      width: calc(100% + 2000px)
+      left: auto
+      right: 0
+    &:after
+      display: none
+
+.info-box
+  height: auto
+  h3
+    text-align: left
+    text-transform: none
+    font-size: 24px
+    margin: 0 0 30px
+  p
+    margin: 0 5px 0 0
+    &:last-child
+      margin: 0
+  .icon-arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 auto
+    width: 20px
+  a
+    color: $accent
+
+.case-box
+  width: 100%
+  background: #FAFAFA
+  border-radius: 7px
+  overflow: hidden
+  margin: 0 0 37px
+  box-shadow: 0px 0px 1.49071px rgba(0, 0, 0, 0.12), 0px 1.49071px 1.49071px rgba(0, 0, 0, 0.24)
+  transition: .3s ease
+  &:hover
+    box-shadow: 18px 0px 25px rgba(0, 0, 0, 0.25), -18px 0px 25px rgba(0, 0, 0, 0.25), 0px 18px 25px rgba(0, 0, 0, 0.25)
+
+.case-box__img
+  width: 100%
+  background: linear-gradient(180deg, rgba(165, 120, 67, 0.5) 0%, rgba(67, 151, 165, 0.5) 100%)
+  height: 215px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.case-box__body
+  width: 100%
+  padding: 5px 8px
+
+.case-box__name
+  color: #000000
+  font-size: 18px
+  &:hover
+    color: $accent
+
+.case-box__links
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #276DCB
+  font-size: 12px
+  margin: 5px 0 0
+  &:hover
+    color: $btn
+
+.form-select
+  padding: 16px 33px 23px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 24px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%,0)
+    height: 1px
+    background: #4397A5
+    width: calc(100% + 100px)
+
+.g-select-multiple
+  width: 49%
+  position: relative
+  font-size: 18px
+  user-select: none
+  height: 34px
+  border: 0.795354px solid #4397A5
+  background-color: #fff
+  text-decoration: none
+  white-space: nowrap
+  color: #A8A8A8
+  cursor: pointer
+  &:hover
+    border-color: #276DCB
+
+.g-select-multiple__selection
+  padding: 0 15px 0 12px
+  color: #A8A8A8
+  font-size: 18px
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.g-select-multiple__dropdown
+  display: none
+  position: absolute
+  z-index: 2
+  padding: 12px 0 16px 0
+  top: 100%
+  left: 0
+  background-color: white
+  box-shadow: 0 16px 32px rgba(55, 71, 79, 0.08), 0 8px 24px rgba(55, 71, 79, 0.1)
+  min-width: 100%
+  color: #222D39
+  margin: 2px 0 0
+  border: none
+
+.g-select-multiple.-active>.g-select-multiple__dropdown
+  display: block
+
+.g-select-multiple__input
+  height: 100%
+  cursor: pointer
+  display: flex
+  align-items: center
+
+.g-select-multiple__icons
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 0 15px 0 auto
+
+.g-select-multiple__down
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 6px
+  height: 11px
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: contain
+
+.g-select-multiple__option-container
+  max-height: 320px
+  overflow-y: auto
+
+.g-select-multiple__option
+  padding: 10px 16px
+  white-space: normal
+  cursor: pointer
+  position: relative
+  display: flex
+  align-items: center
+
+  &:hover
+    background-color: #F4FAFF
+
+  &.-active .g-select-multiple__check
+    display: block
+
+.g-select-multiple__buttons
+  border-top: 1px solid #D7DDE3
+  padding: 16px 16px 0 16px
+  button
+    transition: .3s ease
+    height: 45px
+    padding: 0 30px
+
+.g-select-multiple__apply
+  width: auto
+  display: inline-block
+  margin-top: 0
+  color: #fff
+  background: $btn
+  border: 1px solid $accent
+
+  &:hover
+    background: transparent
+    color: $accent
+    border: 1px solid $accent
+
+.g-select-multiple__reset
+  background: #CC6666
+  color: #fff
+  border: 1px solid #CC6666
+
+  &:hover
+    background: transparent
+    color: #CC6666
+    border: 1px solid #CC6666
+
+.g-select-multiple__remove
+  font-size: 16px
+  display: none
+  width: 20px
+  height: 20px
+  color: white
+  background-color: rgba(0, 0, 0, 0.54)
+  border-radius: 50%
+  text-align: center
+  padding-top: 2px
+  margin-right: 8px
+
+.icon-x:before
+  content: ''
+  display: flex
+  align-items: center
+  justify-content: center
+  background: url("../img/close-white.svg") no-repeat center
+    size: 10px
+  width: 100%
+  height: 100%
+
+.g-select-multiple__option.-active .g-select-multiple__check
+  display: block
+
+.g-select-multiple__uncheck
+  margin-right: 8px
+  font-size: 20px
+  height: 20px
+  width: 20px
+  float: left
+  color: rgba(0, 0, 0, 0.54)
+  margin-top: -1px
+  border: 1px solid $accent
+    radius: 2px
+
+.g-select-multiple__check
+  font-size: 20px
+  height: 20px
+  margin-right: 8px
+  width: 20px
+  position: absolute
+  display: none
+  cursor: pointer
+
+
+.g-select-multiple__check-icon
+  border-radius: 3px
+  background: url("../img/check.svg") no-repeat center
+    size: contain
+  color: white
+  width: 100%
+  height: 100%
+  font-size: 14px
+  text-align: center
+  padding-left: 1px
+  cursor: pointer
 
 
 
+.icon-check
+  display: none
+
+.case-catalog
+  &:before
+    width: 611px
+    height: 1083px
+    background: url("../img/case-bg.svg") no-repeat center
+      size: contain
+    transform: none
+    bottom: -100px
+  &:after
+    width: 556px
+    height: 1032px
+    background: url("../img/case-bg2.svg") no-repeat center
+      size: contain
+    top: -130px
+  .subtitle
+    text-align: center
+    font-size: 18px
+
+.journal
+  h1
+    text-align: left
+    margin: 0 0 40px
+  .subtitle
+    font-size: 17px
+    text-align: left
+    margin: 0
+
+.journal-img
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  max-width: 272px
+  margin: 0 0 0 auto
+
+.tabs-journal
+  color: #000
+  margin: 55px 0
+  .btn
+    margin: 50px auto 0
+    width: 100%
+    max-width: 375px
+    border-radius: 5px
+  .nav-tabs
+    border: none
+      radius: 0
+      bottom: 1.5px solid #A9A7A7
+    .nav-item
+      flex: 0
+      border: 0.5px solid #A9A7A7
+        top: none
+      margin: 0 -1px -1.5px 0
+
+    .nav-link
+      padding: 9px 18px
+      font-size: 18px
+      border-radius: 0
+      margin: 0
+      color: #000000
+      &:before
+        display: none
+    .active
+      background: linear-gradient(180deg, rgba(67, 151, 165, 0) 0%, rgba(67, 151, 165, 0.59) 100%)
+      color: #000000
+  .tab-content
+    background: transparent
+    padding: 17px 0 20px
+    color: #000
+    border:
+      radius: 0
+      bottom: 1.5px solid #A9A7A7
+    &:before
+      display: none
+
+.panel-head
+  width: 100%
+  display: flex
+  align-items: center
+
+
+.links-journal
+  color: #4397A5
+  font-size: 18px
+  span
+    color: #000000
+
+.panel-head-toggler
+  position: relative
+  font-size: 20px
+  color: #000
+  width: 18px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  &:before
+    content: '-'
+    display: inline-block
+    line-height: 1
+    position: absolute
+    left: 50%
+    top: 45%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+
+.panel-head-toggler.collapsed
+  &:before
+    content: '+'
+
+.panel
+  .card-body
+    padding: 8px 10px 0
+    color: #000
+    font-size: 14px
+    background: transparent
+    border: none
+      radius: 0
+    p, ul
+      margin: 0 0 5px
+
+.status-changes
+  margin: 0 0 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 2px 6px
+  width: fit-content
+  border-radius: 5px
+
+.bg-red-black
+  background: #DE6060
+
+.bg-light-brown
+  background: #DE9D60
+
+.bg-light-green
+  background: #79DE60
+
+.list-dots
+  list-style: disc
+  padding: 0 0 0 20px
+
+.subscribe-section
+  h2
+    font-family: $default-font
+  .form-subscribe
+    margin: 50px 0 0
+    justify-content: space-between
+    .form-group
+      margin: 0
+      width: 34%
+    button
+      width: 23%
+    label
+      width: 100%
+    input
+      border: 1px solid #4397A5
+      display: flex
+      align-items: center
+      background: #FAFAFA
 
 @import "media"
 // Всегда в конце

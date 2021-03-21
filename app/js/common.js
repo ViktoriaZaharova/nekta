@@ -33,6 +33,25 @@ $('.partners-wrapper').slick({
     nextArrow: '<button type="button" class="slick-next"></button>',
 });
 
+$('.acquaintance-slider').slick({
+    slidesToShow: 1,
+    appendArrows: '.acquaintance-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="25.124" height="29.011" viewBox="0 0 25.124 29.011">\n' +
+        '  <path d="M387.6,2151.374l11.812-6.82,11.812-6.82v27.279l-11.812-6.82Z" transform="translate(-386.599 -2136.868)" stroke-miterlimit="10" stroke-width="1"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="23.624" height="27.279" viewBox="0 0 23.624 27.279">\n' +
+        '  <path d="M454.069,2151.374l-11.812,6.82-11.812,6.82v-27.279l11.812,6.82Z" transform="translate(-430.445 -2137.734)"/>\n' +
+        '</svg>\n</button>',
+});
+
+let homeSlider = $('.acquaintance-slider');
+
+$('.counter-slide .default').text("/ " + homeSlider.slick("getSlick").slideCount);
+
+homeSlider.on('afterChange', function(event, slick, currentSlide){
+    $(".counter-slide .cp").text(currentSlide<10?`${currentSlide+1}`:currentSlide+1);
+});
+
 $('.links-load').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.filter-box').find('ul li:hidden').slideDown();
@@ -121,6 +140,8 @@ $('.pagination li a').each(function () {
     }
 });
 // end
+
+
 
 
 
