@@ -1847,7 +1847,7 @@ textarea
           size: contain
 
 .nekta-callback
-  margin: 113px 0 120px
+  margin: 50px 0 120px
 
   .callback-content
     max-width: none
@@ -3152,12 +3152,22 @@ textarea
         transform: rotate(-90deg)
 
 .main-about
-  background: linear-gradient(to right, rgba(44,50,64,1) 0%,rgba(44,50,64,1) 40%,rgba(44,50,64,0.8) 70%,rgba(44,50,64,0) 100%), url("../img/bg-about1.jpg") no-repeat right top
-    size: cover
+  background: url("../img/bg-about1.jpg") no-repeat right top
+    size: 1517px
   padding: 190px 0 140px
   position: relative
   overflow: hidden
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 1383px
+    background: linear-gradient(to right, rgba(44,50,64,1) 0%,rgba(44,50,64,1) 40%,rgba(44,50,64,0.8) 70%,rgba(44,50,64,0) 100%)
+      size: cover
   &:before
+    z-index: 1
     content: ''
     opacity: .15
     position: absolute
@@ -3192,7 +3202,20 @@ textarea
 
 .acquaintance
   color: #fff
-  background: #2C3240
+  background: linear-gradient(to right, rgba(44,50,64,1) 0%,rgba(44,50,64,1) 70%,rgba(44,50,64,0.8) 80%,rgba(44,50,64,0) 100%)
+    size: cover
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 538px
+    height: 684px
+    background: url("../img/acquaintance-decor.svg") no-repeat center
+      size: cover
+    opacity: .35
   .text
     font-size: 24px
     max-width: 456px
@@ -3272,8 +3295,8 @@ textarea
   &:after
     background: #2b4961
 
-.form-group-message
-  height: 128px
+
+
 
 .callback-about
   textarea
@@ -3295,6 +3318,8 @@ textarea
       input
         &::placeholder
           color: rgba(#606060, .5)
+    .form-group-message
+      margin: 0 0 15px
     button
       max-width: 370px
       width: 100%
@@ -3443,8 +3468,18 @@ textarea
     justify-content: center
     margin: 0 0 0 auto
     width: 20px
+    transition: .3s ease
   a
     color: $accent
+    cursor: pointer
+
+  .top-news__item
+    cursor: inherit
+    &:hover
+      background: transparent
+      .icon-arrow
+        transform: translateX(5px)
+
 
 .case-box
   width: 100%
@@ -3491,7 +3526,7 @@ textarea
     color: $btn
 
 .form-select
-  padding: 16px 33px 23px
+  padding: 16px 0 23px
   display: flex
   align-items: flex-start
   justify-content: space-between
@@ -3708,6 +3743,11 @@ textarea
     font-size: 17px
     text-align: left
     margin: 0
+  .container
+    max-width: 1320px
+  &:after
+    top: auto
+    bottom: 532px
 
 .journal-img
   display: flex
@@ -3786,9 +3826,10 @@ textarea
     transform: translate(-50%,-50%)
     transition: .3s ease
 
-.panel-head-toggler.collapsed
-  &:before
-    content: '+'
+.collapsed
+  .panel-head-toggler
+    &:before
+      content: '+'
 
 .panel
   .card-body
@@ -3842,6 +3883,12 @@ textarea
       display: flex
       align-items: center
       background: #FAFAFA
+
+.main-blog-img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
 
 @import "media"
 // Всегда в конце
