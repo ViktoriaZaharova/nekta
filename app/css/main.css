@@ -3603,11 +3603,21 @@ textarea {
 
 .acquaintance {
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#2c3240), color-stop(70%, #2c3240), color-stop(80%, rgba(44, 50, 64, 0.8)), to(rgba(44, 50, 64, 0)));
-  background: linear-gradient(to right, #2c3240 0%, #2c3240 70%, rgba(44, 50, 64, 0.8) 80%, rgba(44, 50, 64, 0) 100%);
-    background-size: cover;
   position: relative;
   overflow: hidden; }
+  .acquaintance .container {
+    z-index: 3; }
+  .acquaintance:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(#2c3240), color-stop(40%, #2c3240), color-stop(70%, rgba(44, 50, 64, 0.8)), to(rgba(44, 50, 64, 0)));
+    background: linear-gradient(to right, #2c3240 0%, #2c3240 40%, rgba(44, 50, 64, 0.8) 70%, rgba(44, 50, 64, 0) 100%);
+      background-size: cover;
+    z-index: 2; }
   .acquaintance:before {
     content: '';
     position: absolute;
@@ -3617,7 +3627,8 @@ textarea {
     height: 684px;
     background: url("../img/acquaintance-decor.svg") no-repeat center;
       background-size: cover;
-    opacity: .35; }
+    opacity: .35;
+    z-index: 3; }
   .acquaintance .text {
     font-size: 24px;
     max-width: 456px; }
@@ -3631,9 +3642,14 @@ textarea {
     border-bottom: 1px solid #CC6666; }
 
 .acquaintance-slider {
-  min-width: 883px;
-  position: relative;
-  z-index: 1; }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+  .acquaintance-slider .slick-list, .acquaintance-slider .slick-track {
+    height: 100%; }
   .acquaintance-slider:before {
     content: '';
     position: absolute;
@@ -3646,7 +3662,8 @@ textarea {
     z-index: 1; }
 
 .acquaintance-content {
-  padding: 84px 0 65px; }
+  padding: 84px 0 65px;
+  position: relative; }
 
 .acquaintance-slider__nav {
   position: relative;
@@ -3696,7 +3713,7 @@ textarea {
   margin: 0 0 0 31px; }
 
 .acquaintance-box {
-  height: 698px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4592,8 +4609,6 @@ textarea {
       font-size: 18px; }
   .acquaintance-slider__nav {
     margin: 80px 0 0; }
-  .acquaintance-box {
-    height: 500px; }
   .main-about {
     padding: 120px 0; }
   .acquaintance:before {
@@ -5001,11 +5016,12 @@ textarea {
     background: #2C3240; }
     .acquaintance:before {
       display: none; }
-  .acquaintance-box {
-    height: auto; }
   .acquaintance-slider {
     min-width: auto;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
+  .acquaintance:after {
+    display: none; }
   .acquaintance-content {
     padding: 40px 0; }
   .acquaintance-slider__nav {
